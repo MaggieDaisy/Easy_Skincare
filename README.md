@@ -39,13 +39,44 @@ Potential users of this application are users who have a professional and hobbyi
 
 ### **User Stories**
 
+> Site Owner Stories 
+
+- As a store owner, I wish to be able to add products in an easy way, so that I can add new items to my store at any time
+- As a store owner, I wish to be able to edit and update a product, so that I can change product prices, descriptions, images, and other products criteria
+- As a store owner, I wish to be able to delete a product, so that I can remove items that are no longer available for sale
+- As a store owner, I want to be able to provide the best services for secure payments, recommendations, and professional consultation, so that I can achieve customer satisfaction on the highest level
+
+> Customer/Shopper Stories 
+
+- As a shopper, I wish to be able to view a list of products, so that I can select some interesting items to purchase
+- As a shopper, I wish to be able to view individual product details, so that I can identity the price, description, product rating, product image, have a possibility to add one to the wish list, and leave or read a review
+- As a shopper, I wish to be able to quickly identify sales, kits offer, and available consultations, so that I can take and advantage of special savings on products and choose correctly the product I would like to purchase
+- As a shopper, I wish to be able to easily view the total of my purchases at any time, so that I can avoid spending too much
+- As a shopper, I wish to be able to sort the list of available products, so that I can easily identify the best rated, best priced, and categorically sorted products
+- As a shopper, I wish to be able to sort a specific category of products, so that I can find the best-priced or best-rated product in a specific category, or sort the product in that category by name
+- As a shopper, I wish to be able to sort multiple categories of products simultaneously, so that I can find the best-priced or best-rated products across broad categories
+- As a shopper, I wish to be able to search for a product by name or description, so that I can find the product I wish to buy according to my personal needs
+- As a shopper, I wish to be able to easily see what I have searched for and the number of results, so that I can quickly decide whether the product I want is available
+- As a shopper, I wish to be able to easily select the quantity of a product, so that I can ensure I do not accidentally select the wrong product numbers of items
+- As a shopper, I wish to be able to view items in my bag to be purchased, so that I can identify the total cost of my purchase and all items I will receive
+- As a shopper, I wish to be able to adjust the number of individual items in my bag, so that I can easily make changes to my purchase before checkout
+- As a shopper, I wish to be able to easily enter my payment information, so that I can check out quickly and with no hassles
+- As a shopper, I wish to be able to feel that my personal and payment information is safe, and secure, so that I can confidently provide the needed information to make a purchase
+- As a shopper, I wish to be able to view an order confirmation after checkout, so that I can verify that I have not made any mistakes
+- As a shopper, I wish to be able to receive an email confirmation after checking out, so that I can keep the confirmation of what I have purchased for my records
+
+> Site User Stories 
 
 - As a user of a website, I wish to be able to navigate through very easily, so I can find interesting content
 - As a user of the website, I wish to be able to understand the purpose of the application, so I can gain brief orientation about what I can achieve by using it
 - As a user of the website, I wish to have visible access to social media, so I can follow after site owners/admin
 - As a user of the website, I wish that design is responsive, so I can look at the page on different size of devices
 - As a user of the website, I wish to have the possibility to create a review, so I can share opinion about product with others
-
+- As a user of the website, I wish to be able to easily register for an account, so that I can have a personalized account and be able to view my profile
+- As a user of the website, I wish to be able to easily login or logout, so that I can access my personal account information and update them if needed
+- As a user of the website, I wish to be able to easily recover my password in case I forget it, so that I can recover access to my account
+- As a user of the website, I wish to be able to receive an email confirmation after registering, so that I can verify that my account registration was successful
+- As a user of the website, I wish to be able to have a personalized user profile so that I can view my personal order history and order confirmations, and save my payment information
 
 
 ### **Scope**
@@ -184,7 +215,7 @@ Existing features on the site were created for making the User's Experience easy
 * **CSS - CSS3 technology** – was used as the main language to style the Website.
 * **JS - JavaScript technology** – was used as the main language to create the interactive elements of the Website.
 * **Python technology** - was used as an interpreted high-level general-purpose back end programming language
-* [**Django**](https://www.djangoproject.com/) - DjangoThe web framework for perfectionists with deadlines.
+* [**Django**](https://www.djangoproject.com/) - Django the web framework for perfectionists with deadlines.
 * [**Jinja**](https://jinja.palletsprojects.com/en/3.0.x/) - a web template engine for the Python programming language
 * [**Bootstrap**](https://getbootstrap.com/) - Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
 * [**jQuery**](https://jquery.com/) - the jQuery library was used as an open-source to create interactive features.
@@ -194,6 +225,8 @@ Existing features on the site were created for making the User's Experience easy
 * [**GitHub**](https://github.com/) - GitHub hosting site was used to store the source code for the Website, and Git Pages was used for the deployment of the live version of site.
 * [**Git**](https://git-scm.com/) - Git was used as version control software to commit and push code to the GitHub repository where the source code is stored.
 * [**Heroku**](https://www.heroku.com) - Cloud Application Platform is a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud
+* [**Stripe**](https://stripe.com/en-no) - an Irish-American financial services and software which offers payment processing software and application programming interfaces for e-commerce websites and mobile applications.
+* [**Amazon Web Services**](https://aws.amazon.com/) - subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis.
 * [**Stack Overflow**](https://stackoverflow.com/) - was used as a general source of knowledge.
 * [**w3schools**](https://www.w3schools.com/howto/default.asp) - was used as a general source of knowledge.
 * [**Google Chrome Developer Tools**](https://developers.google.com/web/tools/chrome-devtools) - this built-in developer tool was used to inspect page elements and help debug issues with the site layout and test different styles

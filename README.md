@@ -1,104 +1,292 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<img src="docs/pictures/readme.jpg" style="margin: 0;">
 
-Welcome MaggieDaisy,
+# Easy Skincare
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+## Table of Contents
+1. Project purpose and introduction
+2. UXD – User Experience Design
+3. Features
+4. Technologies and Resources used
+5. Testing
+6. Project barriers and solutions
+7. Version Control
+8. Deployment
+9. Credits
+10. Acknowledgments
 
-## Gitpod Reminders
+# 1. Project purpose and introduction
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+This project was created to demonstrate the acquisition of broader coding skills as part of the Code Institute Fullstack Web Developer Course. Technologies used during the application development process are mainly: HTML, CSS, JavaScript, Python+Django with an additional framework such as Bootstrap. This project aims to create a full-stack e-commerce application that will allow the user to view an asortment, make a secure purchase, leave a comment, store personal data, and get e-consultation.
 
-`python3 -m http.server`
+# Easy Skincare 
 
-A blue button should appear to click: _Make Public_,
+[**View the live project here**](https://hdhdhddahdyfgsjsklslslsllsls.herokuapp.com/)
 
-Another blue button should appear to click: _Open Browser_.
+Easy Skincare is a full-stack application that allows users to interact on the page. The purpose of this app is to demonstrate and search for skincare products, add rewievs, contact for consultation. This app can benefit skincare enthusiasts who like to experiment with products with clear INCI lists and are recommended by dermatologists. The website offers the possibility to users to store their data, add review and make a purchase. This website is designed in such a way that the user can check it at any time, on the phone on the road, or at home on the computer. The project may be expanded in the future with other, more detailed cetegories. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+<img src="docs/pictures/amiresponsive.jpg" style="margin: 0;">
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+# 2. UXD – User Experience Design
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### **Strategy**
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+Potential users of this application are users who have a professional and hobbyist interest in cocktails mixology. The site can be very handy for users with basic skills who are looking for approved classic recipes, freestyle ones, and for new dream inspirations. The site will benefit also users who have already professional skills in bartending and want to share their own idea and get some new fresh overview for other users' recipes. 
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### **User Stories**
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- As a user of a website, I wish to be able to navigate through very easily, so I can find interesting content
+- As a user of the website, I wish to be able to understand the purpose of the application, so I can gain brief orientation about what I can achieve by using it
+- As a user of the website, I wish to have visible access to social media, so I can follow after site owners/admin
+- As a user of the website, I wish that design is responsive, so I can look at the page on different size of devices
+- As a user of the website, I wish to have the possibility to create a review, so I can share opinion about product with others
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### **Scope**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Current and further developing and designing skill ability, the website provides:
+- Clean User Experience by using technologies mentioned in the introduction - HTML, CSS, JavaScript, Python + Django
+- Easy and intuitive navigation via the navbar with a dropdown categories of products and services, and toggle button for mobile version
+- Informative content builds to give a clean and modern impression of the purpose of the website 
+- Responsive design allows navigating on different devices
+- Interactive features which are focused on providing a functional and appealing space for the user (buy button, wishlist, rewiev, checkout)
+- Landing page with the hero image, introduction paragraph, shop button
+- Pieces of key information about products, like description, rating, price, image
+- Clear and simple searching bar to browse for products and key words
+- Informative and simple steps of making secure purchase
+- Clean information on how and where to log in and use the profile as a registered user
+- Secure log out feature possibility to store data safily
+- The simple mean of how to create, add, edit and delete an item - for the Management Production only 
+- Footer with social media icons to link to their sites
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### **Structure**
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The structure of the application is based on meeting the first needs of the potential user. The website is simple structured, learnable, and intuitive, the first interaction enables the quick and easy finding of information and orientation between features and theme. The text content is short and consistent and the imagery is simple and clean, both describe the purpose and aim very well. All sections allow the user to interact with the site using built-in functions.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+All users of the website should be able to see the navigation bar, with clickable options, clear and modern content, and a footer with SM icons. The visual impression and design should be also consistent across all pages of the app.
+- **Navigation Bar** on the top of the page which is consistent  - contains names of each site page for browsing easily between them, site logo which acts as a link to the main page, toggle button visible on smaller devices, and icon matching the theme
+- **Home Page** - contains a short introduction, hero image, shop button
+- **About Page** - 
+- **All Products** Page - contains card panels with the presentation of products, button which is clickable for the further view of full product, search bar with the ability to search for the name of cocktail or ingredient
+- **Register Page** - contains fields to fill up with 'Username' and 'Password' and a 'Register' button, and a link to the 'Log In' Page
+- **Log In** Page - contains fields to fill up with 'Username' and 'Password' and a 'Login' button, and a link to the Register Page
+- **Profile** Page - contains information about user and purchase history, this page is available for registered users
+- **Log Out** link - allows user to log out from the profile to protect a data
+- **Footer** on the bottom of the page which is also consistent - contains icons that act as a link to SM platforms
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+### **Skeleton**
 
-## FAQ about the uptime script
+[**Wireframes:**](docs/wireframes/sketchMS4.pdf)
 
-**Why have you added this script?**
+A website with different separate content pages and the possibility to navigate between them
+- Header – fixed navigation bar with brand name and clickable dropdown links for product categories, search bar
+- Sections called:
+    - Home, 
+    - My account,
+    - Bag,
+    - Wishlist,
+    - Search bar,
+    - All Products, 
+- Footer – footer with social media icons and copyright and disclaimer 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+[**Database:**](docs/database.pdf)
 
-**How will this affect me?**
+A database consists:
+- categories
+- products
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+<img src="docs/database/data.jpg" style="margin: 0;">
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### **Surface**
+The visual experience of this project reflects the theme .............
+> Colors
 
-**So….?**
+A blend of dark and pastel colors reflecting the colors of candy and classic elegance. Throughout the whole project main colors and their shades, picked from ,,,,,,,
+- color 1 
+- color 2
+- color 3
+- additional to underline flash messages and icons ,,,,,
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+<img src="assets/docs/pictures/color_palette.jpg" style="margin: 0;">
 
-**Can I opt out?**
+> Typography
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Font '............' was used for the clean and transparent experience for the whole body content. Selected from Google Fonts after recommendations other users as an elegant font. This specific one is good for clear readability and the professional layout of the e-commerce with beauty products.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+> Icons 
 
-**Anything more?**
+Icons for Bag, Profile and Social Media logos picked from Font Awesome free collection, the web's most popular icon set and toolkit. 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+> Images
 
----
 
-Happy coding!
+The selection of images for website . Imagery presentation shows to users the exact theme of the website making it understandable from the first impression.
+Hero images on the Home Page reflect to standard healthy skin picture ,,,,,,,,,,,,,,,
+Imagery collections were picked from Unsplash and Pexels, as well as from official prducents websites, explaation and credetials below in document, for educational purposes only 
+
+> General Design
+
+During the development process, design changes had to be taken. I wanted to create a strong, visible, and colorful impression for the users. I have decided on a mix of colors and shades,,,,,,,,,,,,,,,, The home page was rebuilt several times until met my expectation in a compromising way. There is a lot to improve later in the future.
+
+
+# 3. Features
+
+> Existing Features
+
+Existing features on the site were created for making the User's Experience easy and intuitive. Application is clear to understand, as a first visible is the purpose of the website which is reading, shopping, storing data, and sharing reviews with others. Space created for users is very simple and comfortable, all features are clearly specified and pointing users to take further steps. The navigation bar and footer are consistent and act as a present component on every page which makes navigation smooth. Name of separate pages acts as active links and brings users to different parts of content and experiences. 
+
+- **Top Navigation Bar**
+
+
+- **Home Page**
+  
+
+- **About Page**
+
+
+- **Register Page**
+  
+
+- **Login Page**
+  
+
+- **Profile Page**
+  
+
+- **Log Out**
+
+
+- **Footer**
+  - Contains Social Media icons that act as links for Facebook, Instagram, and YouTube and bring the user to the main platforms. In the future should bring the user to real social media provided by the community. Links open in a new tab so that the user can smoothly navigate back to the application. 
+
+> Features left to implement in the future when skills developed
+
+- like more products
+- more categories
+- vide consultation
+
+
+# 4. Technologies and Resources used 
+* [**Code Institute Fullstack Web Developer Course Content**](https://codeinstitute.net/) - was used as the main source of fundamental knowledge and inspiration.
+* [**Code Institute „SLACK” Community**](https://slack.com/intl/en-no/) - was used as a source of assistance.
+* **HTML - HTML5 technology** – was used as the main language to create the structure of the Website.
+* **CSS - CSS3 technology** – was used as the main language to style the Website.
+* **JS - JavaScript technology** – was used as the main language to create the interactive elements of the Website.
+* **Python technology** - was used as an interpreted high-level general-purpose back end programming language
+* [**Django**](https://www.djangoproject.com/) - DjangoThe web framework for perfectionists with deadlines.
+* [**Jinja**](https://jinja.palletsprojects.com/en/3.0.x/) - a web template engine for the Python programming language
+* [**Bootstrap**](https://getbootstrap.com/) - Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
+* [**jQuery**](https://jquery.com/) - the jQuery library was used as an open-source to create interactive features.
+* [**Font Awesome**](https://fontawesome.com/) - Font Awesome Icons were used for social media links and marking separate parts of sections.
+* [**Google Fonts**](https://fonts.google.com/specimen/Inconsolata) - Google Font used throughout this project
+* [**Gitpod**](https://www.gitpod.io/) - Integrated Development Environment was used to develop the Website.
+* [**GitHub**](https://github.com/) - GitHub hosting site was used to store the source code for the Website, and Git Pages was used for the deployment of the live version of site.
+* [**Git**](https://git-scm.com/) - Git was used as version control software to commit and push code to the GitHub repository where the source code is stored.
+* [**Heroku**](https://www.heroku.com) - Cloud Application Platform is a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud
+* [**Stack Overflow**](https://stackoverflow.com/) - was used as a general source of knowledge.
+* [**w3schools**](https://www.w3schools.com/howto/default.asp) - was used as a general source of knowledge.
+* [**Google Chrome Developer Tools**](https://developers.google.com/web/tools/chrome-devtools) - this built-in developer tool was used to inspect page elements and help debug issues with the site layout and test different styles
+* [**Mobile-Friendly Test Tool**](https://search.google.com/test/mobile-friendly) - The Mobile-Friendly test tool was used to check if an application is designed for mobile devices.
+* [**Balsamiq Wireframe**](https://balsamiq.com/wireframes/) - these quick and handful tool was used to create wireframes for planning project structure and layout.
+* [**Am I Responsive Bookmarklet**](http://ami.responsivedesign.is/) - Multi Device Website Mockup Generator was used to create the Mockup image for this README file.
+* [**Make a README**](https://www.makeareadme.com/) – a page that shows suggestions on how to create a good Readme file.
+* [**Mastering Markdown**](https://guides.github.com/features/mastering-markdown/)– GitHub guide about Markdown. Lightweight and easy-to-use syntax for styling all forms of writing on the GitHub platform.
+* [**W3C Markup Validation Service**](https://validator.w3.org/) - validator was used to check the markup validity of content in HTML and CSS.
+* [**JSHint**](https://jshint.com/) - was used as tool that helps to detect errors and potential problems in JavaScript code.
+* [**PEP8 online**](http://pep8online.com/) - was used as tool check the code for PEP8 requirements
+* [**Closing Tag Checker for HTML5**](https://www.aliciaramirez.com/closing-tags-checker/) - was used to validate if all tags are open and close correctly.
+* [**HTML and CSS and JS Formatter**](https://webformatter.com/html) - Free online tool to format an ugly HTML code, making it readable and pretty, with the proper indentation.
+* [**Black**](https://black.vercel.app/) - The uncompromising Python code formatter.
+* [**Grammarly**](https://app.grammarly.com/) - a comprehensive writing tool was used as a helper to write clear and correct text.
+* **Microsoft Paint** - a simple raster graphics editor has been used for editing and resizing pictures.
+* [**FaviconeCodeGenerator**](https://www.faviconcodegenerator.com/) - Favicon Code Generator is Free Online Favicon Converter and has been used to create a little graphic image (icon) associated with a webpage.
+
+# 5. Testing
+
+The final result of this project is a full-stack, front-end and back-end web application based on the principles of user experience design, accessibility, and functionality. 
+**This is an interactive front-end and back-end web application developed and implemented by using HTML, CSS, JavaScript, Python+Django, with additional Materialize and jQuery elements**, so required testing was conducted based on functionality for getting and storing data, visual effects, website layout, and interactive actions which user can take during navigation.
+
+**General manual and further testing results, like user stories, CRUD, code validation :** ---> please click [**HERE**](tests.md)
+
+
+# 6. Project barriers and solutions
+
+- ,,,,,,,,,,,,,,,,, This section will come during and after development process
+
+<img src="docs/pictures/.........jpg" style="margin: 0;">
+
+
+# 7. Version Control
+
+**Git** - free and open-source distributed **Version Control System** was used to show tracking all changes during the coding process. Commands used to approve and store files in the repository: 
+- `Git add .`  - adds files/directories to the staging area to be committed
+- `Git commit -m " "` - commits files/directories to the repository with specific message
+- `Git push` - pushes all committed inserts into the GitHub repository
+ 
+
+# 8. Deployment
+
+Steps of setting up and creating this project
+This project uses recommended for students Code Institute's template with the master branch. 
+
+> The first step to take was 
+
+to create a new repository in GitHub named Easy_Skincare. This project was edited and developed using the IDE GitPod and version control software Git to add, commit and push the code to GitHub where it was stored. 
+
+> The second step was 
+
+Install Django and all necessary adds ,,,,,,,,,,, tbc
+
+# 9. Credits
+
+> Content
+
+The text content for this page was created by student Malgorzata Czerwonka (self-written) for a **non-existing company**, and for **educational purposes only**. Inspiration to create informative and consistent content was borrowed from the following sources:
+- [****](https: adrresssssssssssssss) - ,,,,,,,,,,,,,,,,,,,,,, 
+
+> Media
+
+All the images used in this site were picked from:
+- producents and product providers like :
+- 
+- 
+- 
+
+- [**Unsplash**](https://unsplash.com/) - a website dedicated to sharing stock photography for free for every kind of project
+
+- [**Pexels**](https://www.pexels.com/) - the best free stock photos & videos shared by talented creators
+
+- [**Pixabay**](https://pixabay.com/) - a stunning free images & royalty free stock
+
+- [**FAVPNG**](https://favpng.com/) - a database of free transparent PNG Images 
+
+> Code
+- Code inspiration for the whole project borrowed from 'Boutique Ado' Walkthrough Project CI 
+- Credit - ,,,,,,,,,,,,,,  [****](https:)
+- Credit - vanilla JavaScript code snippet for  ,,,,,,,,,,,,,,,
+
+
+# 10. Acknowledgments
+
+- Inspiration for this project was the walkthrough full e-commerce project "Boutique Ado" created by CI
+- I would like to thank: 
+    - Code Institute tutors for creating inspiring content for the course and support during learning process,
+    - Slack Community, students and leaders, for being available and helpful every single time when needed,
+    - someone ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    - and last but not least my mentor Sandeep Aggarwal for his guidance, patience, and effort during the development process
+
+
+
+
+

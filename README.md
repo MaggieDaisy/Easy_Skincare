@@ -285,20 +285,20 @@ Install Django and all necessary adds ,,,,,,,,,,, tbc
 
 > Content
 
-The text content for this page was created by student Malgorzata Czerwonka (self-written) for a **non-existing company**, and for **educational purposes only**. Inspiration to create informative and consistent content was borrowed from the following sources:
-- [****](https: adrresssssssssssssss) - ,,,,,,,,,,,,,,,,,,,,,, 
+The text content for this page was created by student Malgorzata Czerwonka (self-written) for a **non-existing company**, and for **educational purposes only**. Inspiration to create informative and consistent content through different parts of application was self-interest in a beauty field and following after world-class specialists from skincare and world-class trusted companies.
+ 
+- [**CeraVe**](https://www.cerave.com/)
+- [**The Ordinary**](https://deciem.com/en-us/theordinary)
+- [**The Inkey List**](https://www.theinkeylist.com/)
+- [**Naturium**](https://naturium.com/)
+- [**Paula's Choice**](https://www.paulaschoice.com/)
+- [**Neutrogena**](https://www.neutrogena.com/)
+- [**Colorscience**](https://www.colorescience.com/)
 
 > Media
 
-All the images used in this site were picked from:
-- producents and product providers like :
-- [**CeraVe**](https://www.cerave.com/) - 
-- [** The Ordinary**]()
-- [****](https: adrresssssssssssssss)
-- [****](https: adrresssssssssssssss)
-- [****](https: adrresssssssssssssss)
-- [****](https: adrresssssssssssssss)
-- [****](https: adrresssssssssssssss)
+All the images used in this site to provide product visuality were picked from producers and product providers like those listed above. The rest pictures used for design were picked.
+
 
 - [**Unsplash**](https://unsplash.com/) - a website dedicated to sharing stock photography for free for every kind of project
 
@@ -310,8 +310,8 @@ All the images used in this site were picked from:
 
 > Code
 - Code inspiration for the whole project borrowed from 'Boutique Ado' Walkthrough Project CI 
-- Credit - ,,,,,,,,,,,,,,  [****](https:)
-- Credit - vanilla JavaScript code snippet for  ,,,,,,,,,,,,,,,
+- Credit - ,,,,,,,  [****](https:)
+- Credit - vanilla JavaScript code snippet for  ,,,,,,,
 
 
 # 10. Acknowledgments

@@ -34,7 +34,7 @@ Easy Skincare is a full-stack application that allows users to interact on the p
 ### **Strategy**
 
 
-Potential users of this application are users who have a professional and hobbyist interest in cocktails mixology. The site can be very handy for users with basic skills who are looking for approved classic recipes, freestyle ones, and for new dream inspirations. The site will benefit also users who have already professional skills in bartending and want to share their own idea and get some new fresh overview for other users' recipes. 
+Potential users of this application are users who have a professional and hobbyist interest in skincare products as well as everyone who has their own skin concerns and issues. The site can be very handy for users with basic knowledge of beauty products on the market and customers who want to be sure that by adding products to the basket they are buying something that was checked and recommended by specialists, cosmetologists, and dermatologists. The site will benefit also users who have already professional skills in advising just to compare the products and be sure that they are valuable on the market and safe to use according to the clarity of ingredients lists.  
 
 
 ### **User Stories**
@@ -292,9 +292,13 @@ The text content for this page was created by student Malgorzata Czer
 
 All the images used in this site were picked from:
 - producents and product providers like :
-- 
-- 
-- 
+- [**CeraVe**](https://www.cerave.com/) - 
+- [** The Ordinary**]()
+- [****](https: adrresssssssssssssss)
+- [****](https: adrresssssssssssssss)
+- [****](https: adrresssssssssssssss)
+- [****](https: adrresssssssssssssss)
+- [****](https: adrresssssssssssssss)
 
 - [**Unsplash**](https://unsplash.com/) - a website dedicated to sharing stock photography for free for every kind of project
 

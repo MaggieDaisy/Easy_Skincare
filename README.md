@@ -117,7 +117,7 @@ All users of the website should be able to see the navigation bar, with clickabl
 
 ### **Skeleton**
 
-[**Wireframes:**](docs/wireframes/sketchMS4.pdf)
+[**Wireframes:**](docs/wireframes/MS4_Wireframes.pdf)
 
 A website with different separate content pages and the possibility to navigate between them
 - Header – fixed navigation bar with brand name and clickable dropdown links for product categories, search bar

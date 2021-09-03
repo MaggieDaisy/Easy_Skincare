@@ -294,11 +294,13 @@ The text content for this page was created by student Malgorzata Czerwonka (self
 - [**Paula's Choice**](https://www.paulaschoice.com/)
 - [**Neutrogena**](https://www.neutrogena.com/)
 - [**Colorscience**](https://www.colorescience.com/)
+- [**COSRX**](https://www.cosrx.com/)
 
 > Media
 
 All the images used in this site to provide product visuality were picked from producers and product providers like those listed above. The rest pictures used for design were picked.
 
+- [**Flaticon**](https://www.flaticon.com/) - free vector icons and stickers for dev projects, resources made by and for designers
 
 - [**Unsplash**](https://unsplash.com/) - a website dedicated to sharing stock photography for free for every kind of project
 
@@ -309,7 +311,7 @@ All the images used in this site to provide product visuality were picked from p
 - [**FAVPNG**](https://favpng.com/) - a database of free transparent PNG Images 
 
 > Code
-- Code inspiration for the whole project borrowed from 'Boutique Ado' Walkthrough Project CI 
+- Code inspiration for the whole project and code snippets borrowed from 'Boutique Ado' Walkthrough Project by CI 
 - Credit - ,,,,,,,  [****](https:)
 - Credit - vanilla JavaScript code snippet for  ,,,,,,,
 

@@ -1,13 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     height: 100%;
 }
 
 body {
-    background: url('/media/heropic.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-size: 100%;
+    background-color: black;
     height: calc(100vh - 164px);
-    color: #555;
+    color: white;
     font-family: "Rubik";
+}
+
+.hero {
+    background: url('/media/heropic.jpg') no-repeat center center fixed;
+    height: 100vh;
 }
 
 /* from Bulma */

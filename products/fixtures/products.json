@@ -1,0 +1,651 @@
+[{
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50159",
+            "name": "The Inkey List - 15% Vitamin C + EGF serum",
+            "description": "Intensively brighten and regenerate skin. A delicate yet powerful lightweight serum that delivers a potent dose of actives to help brighten dull skin and support natural skin elasticity. Vitamin C, a powerful multifunctional antioxidant, helps to protect skin from damage caused by environmental pollution (called free radicals). Naturally derived EGF (Epidermal Growth Factor) helps to stimulate skin cells to regenerate, producing rejuvenated, youthful skin.​ Ascorbyl Glucoside converts to pure Vitamin C on the surface for an instant glow & radiant complexion. It is good for everyone and helps to intensively & instantly brighten and support skin regeneration. Contains 15% Ascorbyl Glucoside (Vitamin C) - a potent antioxidant that helps brighten the look of skin and protect from environmental stressors, and 1% Epitensive - a plant-derived Epidermal Growth Factor system to support natural elasticity and skin health.",
+            "price": 14.99,
+            "category": 2,
+            "rating": 4.2,
+            "image": "TIL_Vitc.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50425",
+            "name": "The Inkey List - Retinol",
+            "description": "Helps reduce fine lines and wrinkles. Your go-to ingredient for skin renewal. Derived from Vitamin A, this slow-release Retinol serum helps target the appearance of fine lines and wrinkles with less risk of irritation. It also boosts overall skin clarity and uneven skin tone for a brighter, more even complexion. A perfect introduction to using Retinol for those who are starting to see the signs of aging. It is good for normal skin and helps to reduce wrinkles without irritation. Contains 1% RetiStar stabilized Retinol, 0.5% Granactive Retinoid and Squalane for hydration and soothing.",
+            "price": 9.99,
+            "category": 1,
+            "rating": 4.7,
+            "image": "TIL_Retinol.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50010",
+            "name": "The Inkey List - Niacinamide",
+            "description": "Helps control excess oil and redness. A lightweight, power-packed serum containing 10% Niacinamide that can be easily layered into your skincare routine. This naturally occurring B3 vitamin helps to effectively reduce excess oil, blemishes, and redness. Its thin consistency is formulated with 1% Hyaluronic Acid for added hydration and effective delivery. It is good for everyone and helps to control excess oil, redness, and irritated skin. Contains 10% Niacinamide which helps to control excess oil, target blemishes as well as tackle redness, and 1% Hyaluronic Acid solution which helps to hydrate and plump the skin.",
+            "price": 6.99,
+            "category": 3,
+            "rating": 4.6,
+            "image": "TIL_Niaci.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp500157",
+            "name": "The Inkey List - Salicylic Acid Cleanser",
+            "description": "Breakout and oil-reducing cleanser. This non-drying, lightly foaming cleanser removes makeup and dirt, while penetrating deep into pores helping to reduce blackheads and breakouts. As well as effectively cleansing the skin, this 2% Salicylic Acid cleanser has an added zinc compound. Together they help with oil control, reducing blackheads and breakouts, and promoting a more even-looking complexion. It is good for acne-prone and oily skin. Helps to reduce blackheads, breakouts and minimize excess oil. Contains 2% Salicylic Acid which helps to unclog pores and gently exfoliate, Zinc compound helps reduce excess oil, and 0.5% allantoin which helps soothe irritation.",
+            "price": 9.99,
+            "category": 5,
+            "rating": 4.7,
+            "image": "TIL_Salcleans.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50605",
+            "name": "The Ordinary - Niacinamide 10% + Zinc 1% Serum",
+            "description": "Niacinamide (Vitamin B3) is indicated to reduce the appearance of skin blemishes and congestion. A high 10% concentration of this vitamin is supported in the formula by zinc salt of pyrrolidone carboxylic acid to balance visible aspects of sebum activity. Independent studies suggest Niacinamide is also an effective ingredient for brightening skin tone. Contraindications: If topical Vitamin C is used as part of skincare, it should be applied at alternate times with this formula. Otherwise, Niacinamide can affect the integrity of Vitamin C. Notes: While Niacinamide and Zinc PCA reduce the look of blemishes and balance visible sebum activity, neither is a treatment for acne. For persistent acne-related conditions, we recommend the use of Benzoyl Peroxide and/or Retinoic Acid.",
+            "price": 5.99,
+            "category": 3,
+            "rating": 4.4,
+            "image": "TO_Niaci.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50206",
+            "name": "The Ordinary - Ascorbyl Glucoside Solution 12%",
+            "description": "Vitamin C is an effective antioxidant, brightens the skin tone, and reduces signs of aging. In its pure form, Vitamin C is unstable in water. Ascorbyl Glucoside is a water-soluble derivative of Vitamin C. It is much more stable in water but it is less potent than direct L-Ascorbic Acid. Being more compatible with water allows for a very pleasant serum texture. It is considered a gold standard of Vitamin C derivatives due to its high stability and comfortable use, but it's impossible to achieve extremely high L-Ascorbic Acid potency with this solution. Aside from the general benefits of pure Vitamin C, Ascorbyl Glucoside has been shown to offer specific skin brightening benefits. Topical Vitamin C offers a wide array of benefits to the skin. However, many forms of Vitamin C and many more formulations of Vitamin C are available commercially with the potential to confuse the audience. We have developed a guide that offers guidance on the formulations of Vitamin C offered under The Ordinary range. It also offers education on Vitamin C itself and on the differences between formulations of Vitamin C at large. Note: Supplied in UV-protective packaging.",
+            "price": 12.99,
+            "category": 2,
+            "rating": 4.2,
+            "image": "TO_Vitc.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50521",
+            "name": "The Ordinary - Granactive Retinoid 2% Emulsion",
+            "description": "This formulation combines two forms of next-generation retinoid actives: A 2% concentration of Granactive Retinoid™ which is a complex of solubilized Hydroxypinacolone Retinoate (HPR). HPR is a highly-advanced form of retinoid which is, in fact, a non-prescription ester of all-trans direct retinoic acid that offers a multi-fold better effect against signs of aging than retinol, retinyl palmitate, and nearly all other forms of non-prescription retinoid; as well as A sustained-delivery form of pure retinol in a protective capsule system which supports both the delivery and the effect of Granactive Retinoid. Both forms of retinoid used avoid the irritation associated with retinoids (including retinol) use while delivering better visible results against signs of aging. This product uses next-generation retinoid active technologies which have been shown to achieve a better reduction in signs of aging than retinol without irritation. These technologies cannot be compared directly with retinol itself in terms of concentration because they include a different retinoid molecule, in a similar way that Retinol cannot be compared with Retinoic Acid in terms of concentration.",
+            "price": 9.89,
+            "category": 1,
+            "rating": 4.6,
+            "image": "TO_Retinol.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50115",
+            "name": "The Ordinary - Azelaic Acid Suspension 10%",
+            "description": "Found in grains, Azelaic Acid is produced naturally by yeast that lives on normal skin. It brightens the skin tone while visibly improving the evenness of skin texture and reducing the look of blemishes. It is a multi-functional support ingredient for all skin types and also acts as an effective antioxidant. This formula offers a very high 10% concentration of high-purity Azelaic Acid in a lightweight cream-gel system. Apply to face AM and/or PM to improve visible brightness and the appearance of skin texture. Avoid contact with eyes and mouth. Use sun protection during the day. If irritation occurs, cease use and consult a physician. Use only as directed on unbroken skin. Patch testing prior to use is advised. Keep out of reach of children.",
+            "price": 7.99,
+            "category": 4,
+            "rating": 4.4,
+            "image": "TO_Azelaic.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50715",
+            "name": "The Ordinary - Mandelic Acid 10% + HA",
+            "description": "Mandelic Acid 10% + HA offers superficial dermal peeling that is gentler than other alpha hydroxy acids. The molecular weight of mandelic acid is 152.1 daltons which is larger than other alpha hydroxy acids. This larger size allows mandelic acid to penetrate the skin more slowly which in turn makes it very gentle and suitable for all skin types. You don't need a concentration of more than 10%, because then you would simply be achieving an indirect peeling strength that is more easily offered through lower percentages of glycolic acid. Contraindications: This formula should not be used on sensitive, peeling, or compromised skin. Please refer to additional sun protection notes and other warnings in provided Directions. Note: While exfoliating acids can result in quick visible benefits, we generally suggest the use of indirect forms of skin exfoliation in favor of direct forms such as this formula due to potential inflammation and sensitivity associated with acids.",
+            "price": 6.89,
+            "category": 4,
+            "rating": 4.6,
+            "image": "TO_Mandelic.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50115",
+            "name": "Paula's Choice - 2% BHA Liquid Exfoliant",
+            "description": "Number One product worldwide + cult favorite, this gentle leave-on exfoliant with salicylic acid quickly unclogs pores, smooths wrinkles, brightens, and evens out skin tone. Clears & minimizes enlarged pores, BHA (beta hydroxy acid) sheds built-up layers of skin. Fluid, lightweight texture absorbs quickly. Use up to twice daily after cleansing & toning skin. A unique leave-on formula that’s gentle enough for daily use on all skin types. Exfoliates dead skin cells while clearing pores for a more even, radiant tone, plus visibly reduces fine lines and wrinkles to reveal remarkably smoother, younger-looking skin. This exfoliant has an optimal pH range of 3.2–3.8. Gently apply using fingers or a cotton pad over the entire face and neck, including the eye area (avoid lash line and eyelids) after cleansing and toning. Do not rinse.",
+            "price": 29.99,
+            "category": 4,
+            "rating": 4.0,
+            "image": "PC_Salicylic.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50055",
+            "name": "Paula's Choice - C15 Super Booster",
+            "description": "This concentrated booster with 15% pure vitamin C dramatically brightens uneven skin while improving the appearance of wrinkles and fine lines. Vitamin C visibly brightens skin and reveals a more radiant complexion. Feather-light, the liquid formula absorbs quickly. Use alone or add to your moisturizer or serum. C15 Super Booster contains a highly concentrated form of vitamin C and an assortment of skin-stabilizing antioxidants and skin-replenishing ingredients. Combined, they provide exceptional results including improving the appearance of uneven skin tone, brightening a dull complexion, and helping skin ward off the impact of environmental assaults. Dispense 2-3 drops into the palm of your hand and then apply to your face. Add a couple more drops if you will also be applying to your neck and chest. During the day, finish with a moisturizer with SPF 30 or greater. Can be applied under the eye area, avoiding the eye itself.",
+            "price": 49.99,
+            "category": 2,
+            "rating": 3.8,
+            "image": "PC_Vitc.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50069",
+            "name": "Paula's Choice - 10% Niacinamide Booster",
+            "description": "This concentrated 10% niacinamide serum booster dramatically improves uneven skin tone and refines the appearance of pore size, skin texture, and fine lines. Promotes a brighter, younger-looking appearance. Niacinamide (vitamin B3) visibly minimizes pore size. Sheer, ultra-light liquid formula. Use alone or add to your moisturizer or serum. 10% Niacinamide Booster is the first concentrated 10% niacinamide formula blended with natural calming and superior hydrating ingredients to address the frustrating combination of enlarged pores plus visible signs of aging, such as: uneven skin tone, lack of radiance, rough surface skin texture, redness, and dryness. The results after only a few days will impress you. Dispense 2-3 drops into the palm of your hand and then apply to your face. Add a couple more drops if you will also be applying to your neck and chest. During the day, finish with a moisturizer with SPF 30 or greater. Can be applied under the eye area, avoiding the eye itself.",
+            "price": 44.99,
+            "category": 3,
+            "rating": 4.0,
+            "image": "PC_Niaci.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50147",
+            "name": "Paula's Choice - 1% Retinol Treatment",
+            "description": "A potent and uniquely formulated retinol solution that hydrates and delivers remarkable anti-aging benefits with a controlled-release delivery system to allow for even, consistent absorption. Advanced hydrating complex absorbs quickly. Diminishes the appearance of wrinkles, fine lines. Light lotion texture delivers powerful results. Use after cleansing, toning & exfoliating skin. High-strength 1% retinol concentration. Combined with potent antioxidants, CLINICAL 1% Retinol Treatment is a specially formulated light lotion that absorbs quickly and goes to work immediately to enhance hydration and diminish the appearance of wrinkles, fine lines, and uneven skin tones. Licorice, oat extract, and other soothing ingredients help to calm redness. Limit initial use to three times per week; gradually increase frequency to every other night, then finally each evening as tolerated. Apply a pea-sized amount after cleansing and toning. Carefully avoid the lips, eyes (including eyelids), and corners of the eyes. Can be used on the perimeter of the orbital bone if desired. To minimize irritation, try combining with 2-3 drops of Resist Moisture Renewal Oil Booster.",
+            "price": 58.99,
+            "category": 1,
+            "rating": 4.1,
+            "image": "PC_Retinol.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50572",
+            "name": "The Inkey List - Peptide Moisturizer",
+            "description": "Helps reduce wrinkles. A nurturing yet fast-absorbing daily moisturizer with a dual peptide formula, aiming to reduce the appearance of fine lines & wrinkles and balance skin's natural oil levels. With continued use, helps to support natural collagen and hydrate skin, leaving skin looking youthful. It is good for dry skin and helps to reduce wrinkles & hydrate skin. Contains 2% Royal Epigen P5 which helps to even skin tone and delay the aging of skin cells, as well as 1% Hydrating Peptide Solution which supports your skin’s moisture barrier for visibly radiant skin.",
+            "price": 14.99,
+            "category": 6,
+            "rating": 4.2,
+            "image": "TIL_Moistp.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50740",
+            "name": "The Ordinary - Natural Moisturizing Factors + HA",
+            "description": "Natural Moisturizing Factors (NMF) are elements that keep the outer layer of the skin protected and well-hydrated. NMF are made up of multiple amino acids, fatty acids, triglycerides, urea, ceramides, phospholipids, glycerin, saccharides, sodium PCA, hyaluronic acid, and many other compounds that are naturally present in the skin. This formula offers non-greasy hydration that acts as a direct topical supplement of impaired NMF components. It contains 11 amino acids, phospholipids, alpha/beta/gamma fatty acids, triglycerides, sterols and sterol esters, glycerin, ceramide precursors, urea, saccharides, sodium PCA, and hyaluronic acid. It offers immediate hydration and lasting results with continued use. Apply after serums as needed for effective surface hydration. If irritation occurs, cease use and consult a physician. Use only as directed on unbroken skin.",
+            "price": 5.99,
+            "category": 6,
+            "rating": 4.4,
+            "image": "TO_Moist.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50248",
+            "name": "The Inkey List - Vitamin B, C and E Moisturizer",
+            "description": "Daily moisturizer for healthy-looking skin. This lightweight daily moisturizer quickly absorbs to deliver every essential vitamin for healthy-looking skin, including clarifying B3 (Niacinamide) to help balance oil, brightening antioxidant Vitamin C, and soothing Vitamin E. Perfect for normal skin types looking to keep skin healthy all year round. It is good for normal skin and helps to keep skin healthy and feeling fresh. Contains Vitamin B3 (Niacinamide) which helps control excess oil and the look of redness, Vitamin C which brightens the appearance of dull skin and increases radiance, and Vitamin E which helps to smooth and soothe skin.",
+            "price": 4.99,
+            "category": 6,
+            "rating": 4.0,
+            "image": "TIL_Moistb.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50787",
+            "name": "Paula's Choice - Omega+ Complex Moisturizer",
+            "description": "Naturally restore dehydrated skin's glow with this cloud-like cream's blend of superfood omega fatty acids, replenishing ceramides and antioxidants. Omegas 3, 6, and 9 strengthen the moisture barrier while passion fruit and guava extracts soothe stressed skin. Lightweight, whipped texture locks in hydration. This delicate cream nourishes dry skin with an exclusive blend of shea butter and omega oils that quiet factors in the skin which trigger signs of stress and irritation. Ceramides, plant oils and botanical antioxidants, passion fruit and guava, provide barrier-strengthening nutrients for healthier skin. Once or twice daily, apply a small amount to the face and neck. For daytime, always follow with a sunscreen. If using with RESIST Omega + Complex serum, apply serum first.",
+            "price": 35.99,
+            "category": 6,
+            "rating": 4.0,
+            "image": "PC_Moist.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50182",
+            "name": "Naturium - Niacinamide Serum 12% Plus Zinc 2%",
+            "description": "This concentrated serum is formulated with pure 12% niacinamide and 2% zinc PCA that helps improve uneven skin tone and visually minimizes the look of pores, skin texture, and fine lines. Perfect for those with sensitive skin. Helps reduce the look of enlarged pores. Refines the appearance of uneven texture. Helps balance excess oil production. Purifies congested skin. Shake well. Apply an even layer onto the face, neck, and chest morning and night. Follow with moisturizer.",
+            "price": 16.99,
+            "category": 3,
+            "rating": 4.1,
+            "image": "NA_Niaci.jpg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50186",
+            "name": "Naturium - Vitamin C Complex Serum",
+            "description": "This potent serum is formulated with a vitamin C complex of highly stabilized l-ascorbic acid, sodium ascorbyl phosphate, and a bioactive fruit blend that helps brighten and shield skin from environmental stressors for a healthier, more youthful-looking complexion. This proprietary vitamin C complex amplifies the effectiveness of l-ascorbic acid and sodium ascorbyl phosphate while allowing it to function in a non-irritating pH environment. Helps brighten the overall complexion. Supports skin's production of collagen. Shields skin from environmental stressors. Shake well. Apply an even layer onto the face, neck, and chest morning and night, avoiding the eye area. For best results, follow with moisturizer and use SPF in the morning. Patch test prior to use is advised.",
+            "price": 20.99,
+            "category": 2,
+            "rating": 4.5,
+            "image": "NA_Vitc.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50326",
+            "name": "Naturium - Retinol Complex Serum",
+            "description": "This advanced serum is formulated with a photostable, synergistic blend of encapsulated retinol, a natural bio-retinol, and bakuchiol, a plant-derived retinol alternative, that helps improve the look of fine lines, wrinkles, elasticity, and uneven tone while also promoting overall radiance. Smooths the appearance of fine lines, wrinkles and pores. Improves skin elasticity and uneven tone. Visually refines skin texture. Shake well. Apply an even layer onto the face, neck, and chest, avoiding the eye area. For best results, follow with moisturizer. If mild redness occurs, reduce the frequency of use until the skin adjusts. Wear SPF during the day. Patch test prior to use is advised.",
+            "price": 20.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "NA_Retinol.jpg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50723",
+            "name": "Naturium - Marine Hyaluronic Water Cream",
+            "description": "This next-generation water cream is formulated with marine-based polysaccharides, hyaluronic acid, and phytonutrients to provide skin with a burst of long-lasting hydration. Refreshing, lightweight water cream drenches skin with a burst of long-lasting hydration. Using upward motions, massage gently onto the face, neck, and chest. For best results, layer after serums morning and night.",
+            "price": 20.99,
+            "category": 6,
+            "rating": 4.3,
+            "image": "NA_Moist.jpg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50936",
+            "name": "Naturium - Fermented Camellia Creamy Cleansing Oil",
+            "description": "This innovative creamy cleansing oil is formulated with fermented camellia oil, camellia extract, and a nourishing blend of linoleic-rich oils that work to dissolve makeup, oil, SPF, and other impurities. Developed for all skin types. A unique oil-in-gel texture that transforms on skin. Melts away makeup, oil, and other impurities. Cleanses while leaving skin feeling soft and nourished. Using dry hands, work a generous amount into palms and warm for 8-10 seconds until the cleanser transforms into an oil phase. Massage onto dry skin to dissolve impurities and add water to emulsify. Rinse thoroughly and follow with a second cleanse. Wear SPF during the day. Patch test prior to use is advised.",
+            "price": 20.99,
+            "category": 5,
+            "rating": 4.0,
+            "image": "NA_Cleans.jpg"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50384",
+            "name": "Naturium - BHA Liquid Exfoliant 2%",
+            "description": "This leave-on exfoliant is formulated with an efficacious level of encapsulated salicylic acid and bioactive fruit acids that unclog pores, even skin tone, and smooth fine lines and wrinkles for a healthier, more radiant-looking complexion. Effectively exfoliates skin to unclog pores. Minimizes the look of fine lines, wrinkles, and uneven texture. Creates a glowing, radiant complexion. Shake well. After cleansing, apply an even layer onto the face with either your palms or a cotton pad. Do not rinse. Start with application every other night and increase to daily use, if tolerable. Follow with serums and moisturizer. Slight tingling or redness upon application may occur. Wear SPF during the day. Patch test prior to use is advised.",
+            "price": 20.99,
+            "category": 4,
+            "rating": 4.2,
+            "image": "NA_Salicylic.jpg"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50111",
+            "name": "CeraVe - Skin Renewing Retinol Serum",
+            "description": "Retinol serum is an effective product for improving the appearance of fine lines, wrinkles, skin texture, and radiance. We recommend an anti-aging serum with ingredients like hyaluronic acid for extra hydration, niacinamide for calming benefits, and ceramides to help restore the skin’s natural barrier. CeraVe Skin Renewing Retinol Serum is a gentle, yet effective, daily retinol serum that provides you with a variety of anti-aging benefits. Ideal for all skin types, the non-comedogenic formula reduces the appearance of fine lines and wrinkles as it improves your skin’s texture and radiance. Enhanced with hyaluronic acid, soothing niacinamide, and three essential ceramides to help restore the skin’s barrier, our retinol serum also features patented time-release MVE Delivery Technology.",
+            "price": 18.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "CV_Retinol.jpg"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50317",
+            "name": "CeraVe - Skin Renewing Vitamin C Serum",
+            "description": "Vitamin C can play a powerful role in your skincare regimen. Not only has it has been proven to provide highly effective antioxidant protection against environmental damage, but it also delivers visible improvement in the appearance of fine lines, wrinkles, and uneven skin tone. That's why a vitamin C serum is an important anti-aging skin care step that helps neutralize the free radicals that may lead to signs of premature skin aging, in addition to enhancing your skin’s radiance and healthy-looking appearance. CeraVe Skin Renewing Vitamin C Serum features 10% pure vitamin C (L-ascorbic acid) for antioxidant benefits, while also helping to visibly brighten your complexion and promote a more even skin tone. Potent, yet gentle and lightweight, our vitamin C serum is also formulated with three essential ceramides, moisturizing hyaluronic acid, and soothing vitamin B5 to help improve texture, restore the skin’s protective barrier, and enhance hydration for soft, radiant, healthy-looking skin. Suitable for all skin types, including sensitive ones, our vitamin C serum also comes in protective packaging that helps prevent oxidation and maintain product performance.",
+            "price": 24.99,
+            "category": 2,
+            "rating": 3.3,
+            "image": "CV_Vitc.jpg"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50519",
+            "name": "CeraVe - Hydrating Cream-to-Foam Cleanser",
+            "description": "Facial cleansers are designed to remove dirt, oil, pollution, daily sunscreen, and makeup, but it’s important to choose a formula that addresses the needs of specific skin types without disrupting the skin’s natural barrier. Those with dry skin can enjoy the benefits of both a cream cleanser that hydrates and a foaming formula that provides a refreshing skin feel—without having to choose between the two. Developed with dermatologists, CeraVe Hydrating Cream-to-Foam Cleanser begins as a cream before transforming to a soft foam when you begin to lather it on the skin with water, and effectively removes dirt and makeup without stripping the skin’s natural moisture or leaving it feeling tight and dry. This gentle, fragrance-free formula features three essential ceramides, amino acids, and hyaluronic acid, which work together to help maintain the skin barrier and lock in moisture.",
+            "price": 11.99,
+            "category": 5,
+            "rating": 4.4,
+            "image": "CV_Cleans.jpg"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50948",
+            "name": "CeraVe - Hydrating Mineral Sunscreen SPF 30 Face Sheer Tint",
+            "description": "Protect your skin, while getting a healthy glow without any white cast. CeraVe Hydrating Mineral Sunscreen Broad Spectrum SPF 30 Face Sheer Tint provides UVA/UVB protection with 100%-mineral titanium dioxide and zinc oxide, forming a barrier on the surface of your skin to reflect the sun’s rays. Non-greasy and suitable for sensitive skin, our mineral sunscreen with tint seamlessly blends into all skin tones. As with all CeraVe products, our tinted facial sunscreen has three essential ceramides to help restore the skin’s natural barrier and lock in moisture. Unlike many other tinted sunscreens, ours is formulated with soothing niacinamide and hyaluronic acid to help maintain moisture while leaving a sheer, natural finish that blends seamlessly with your skin.",
+            "price": 12.99,
+            "category": 7,
+            "rating": 4.2,
+            "image": "CV_Sunscr.jpg"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50628",
+            "name": "CeraVe - Moisturizing Cream",
+            "description": "Barrier-restoring moisturizing cream. While a compromised skin barrier can lead to dryness and itching, a moisturizing cream with hyaluronic acid and ceramides can help. By hydrating the skin and restoring its natural barrier, a cream with these ingredients can help those with even dry to very dry skin improve the look and feel of their skin. CeraVe Moisturizing Cream includes three essential ceramides and hyaluronic acid to effectively hydrate the skin and restore the skin’s protective barrier. Developed with dermatologists and suitable for dry and very dry skin on the face and body, this rich, non-greasy, fast-absorbing moisturizing cream features our patented MVE Delivery Technology to release a steady stream of moisturizing ingredients throughout the day and night. CeraVe Moisturizing Cream with ceramides is fragrance-free.",
+            "price": 15.99,
+            "category": 6,
+            "rating": 4.7,
+            "image": "CV_Moistcream.jpg"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50308",
+            "name": "CeraVe - Daily Moisturizing Lotion",
+            "description": "Oil-free moisturizer with hyaluronic acid. Finding the right products for your skincare routine should come down to a few easy steps. Besides cleansing and sun protection, a daily moisturizer is essential. We recommend looking for ingredients like hyaluronic acid and ceramides to help restore and maintain the skin’s protective barrier. CeraVe Daily Moisturizing Lotion is a lightweight, oil-free moisturizer that helps hydrate the skin and restore its natural barrier. Formulated with three essential ceramides and hyaluronic acid, it also features patented MVE Technology for long-lasting hydration and lightweight, non-comedogenic formula that won’t clog pores. Our daily moisturizer leaves the skin feeling comfortable and is gentle on the skin as it provides 24-hour hydration.",
+            "price": 14.99,
+            "category": 6,
+            "rating": 4.7,
+            "image": "CV_Moistlotion.jpg"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50815",
+            "name": "Paula's Choice - Youth-Extending Daily Hydrating Fluid SPF 50",
+            "description": "A synthetic, water-light formula that contains a vital selection of antioxidants and broad-spectrum sun protection to fight visible signs of aging and prevent premature aging of the skin. Promotes a healthier, younger-looking appearance. Fights against environmental stressors. The fluid formula leaves a matte finish. Use as the last step in your AM skincare routine. RESIST Youth-Extending Daily Hydrating Fluid SPF 50 perfectly couples a water-light texture with proven broad-spectrum sun protection, but this advanced formula goes further by including key antioxidants that research has shown skin needs to feel firmer and look younger and more even-toned. Use as the last step in your AM skincare routine. Apply liberally 15 minutes before sun exposure. If you don’t apply liberally, you will need to reapply every two hours after your skin is exposed to direct sunlight. If you plan to swim or perspire you must apply a water-resistant sunscreen.",
+            "price": 33.99,
+            "category": 7,
+            "rating": 4.0,
+            "image": "PC_Sunscr.jpg"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50716",
+            "name": "Neutrogena - Sheer Zinc Face Dry-Touch Sunscreen Broad Spectrum SPF 50",
+            "description": "Neutrogena Sheer Zinc Face Sunscreen Lotion Broad Spectrum SPF 50 is a mineral sunscreen with Purescreen naturally sourced 100% zinc oxide technology. This gentle formula delivers superior broad-spectrum protection against burning UVB and aging UVA rays. Plus, it's mild even on sensitive skin, and it's free of fragrance, parabens, phthalates, dyes, and irritating chemicals. Formulated specifically for facial skin, this product contains antioxidants and layers invisibly under makeup. Our Dry-Touch technology ensures that this sunscreen dries with a non-greasy, lightweight finish. It's also easy to apply. One of the leading mineral sunscreen brands, hypoallergenic, non-comedogenic (won't clog pores), oil-free, won't sting eyes, water-resistant (80 minutes), dermatologist tested, awarded the National Eczema Association Seal of Acceptance as a suitable sunscreen for persons with sensitive skin conditions.",
+            "price": 12.99,
+            "category": 7,
+            "rating": 3.9,
+            "image": "NT_Sunscr.jpg"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50391",
+            "name": "Colorescience - Sunforgettable Total Protection Face Shield Classic SPF 50",
+            "description": "Powered by patented EnviroScreen Technology, this hydrating, antioxidant-rich mineral formula provides complete protection from environmental aggressors in a weightless texture that blends in sheer, for a natural bare-faced finish. A lightweight and silky formula that blends seamlessly into most skin tones, leaving no traces of white, unlike other 100% pure mineral sunscreens. For Dry, Normal, and Combination skin types. Shake well before each use! Separation may occur and is natural. Apply at least a nickel-sized amount evenly on the face for complete protection. Wear alone for a bare-faced, dewy look, mix with any other Face Shield product for your own custom blend, or layer with treatment products or cosmetics.",
+            "price": 39.99,
+            "category": 7,
+            "rating": 4.8,
+            "image": "COL_Sunscr.jpg"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50542",
+            "name": "EltaMD - UV Elements Broad-Spectrum SPF 44",
+            "description": "EltaMD UV Elements is a 100% physical sunscreen in a tinted, moisturizing base. It is gentle for even the most sensitive skin types, including post-procedure skin. Its chemical-free actives, zinc oxide, and titanium dioxide, provide safe but sure sun protection. These mineral-based UV filters work with ultra-hydrating hyaluronic acid to protect and hydrate the skin. UV Elements has a universal tint that beautifully enhances most skin tones for a more youthful appearance. Suitable for all skin types, also post-procedure",
+            "price": 36.99,
+            "category": 7,
+            "rating": 4.6,
+            "image": "ELT_Sunscr.jpg"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50225",
+            "name": "Paula's Choice - Advanced Illuminate + Smooth Kit",
+            "description": "Dramatically improve skin’s texture, tone, and glow with clinically proven ingredients that fight dullness, bumps & signs of aging. This kit includes: Skin Perfecting 2% BHA Liquid Exfoliant - unclogs large pores and smooths texture. C15 Super Booster - 15% vitamin C improves radiance and tone. Clinical 1% Retinol Treatment - visibly reduces wrinkles and roughness.",
+            "price": 109.99,
+            "category": 8,
+            "rating": 5.0,
+            "image": "PC_Kit.jpg"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50402",
+            "name": "The Ordinary - The No-Brainer Set",
+            "description": "This kit contains: Natural Moisturizing Factors + HA. Apply after serums as needed for effective surface hydration. Granactive Retinoid 2% Emulsion. Apply a small amount to the face in the PM as part of your skincare regimen, after water-based serums but before heavier treatments. Do not use with other retinoid treatments. Avoid unprotected solar exposure. If irritation occurs, cease use and consult a physician. Refrigerate after opening. Buffet. Apply to the entire face in the AM and PM after cleaning.",
+            "price": 29.99,
+            "category": 8,
+            "rating": 4.7,
+            "image": "TO_Kit1.jpg"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50638",
+            "name": "Naturium - The Skin Soothing Bundle",
+            "description": "Keep skin cool, calm, and collected. This specially curated bundle features our Niacinamide Cleansing Gelee, Azelaic Topical Acid 10% and Niacinamide Serum 12% Plus Zinc 2% to soothe, calm and comfort irritated skin.",
+            "price": 51.99,
+            "category": 8,
+            "rating": 4.0,
+            "image": "NA_Kit1.jpg"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50574",
+            "name": "Naturium - The Superstars Bundle",
+            "description": "The basics reimagined. This specially curated bundle features our favorite serums that are staples for any skincare routine. Featuring our Vitamin C Complex Serum, Retinol Complex Serum, and Niacinamide Serum 12% Plus Zinc 2%, this set features must-have ingredients. Mix, match, and layer for a healthy-looking complexion.",
+            "price": 50.99,
+            "category": 8,
+            "rating": 4.7,
+            "image": "NA_Kit2.jpg"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp500576",
+            "name": "The Ordinary - The Balance Set",
+            "description": "This kit contains:Squalane Cleanser Dispense product into hands. Rub together to warm the product, allowing it to melt into an oil. Massage well onto dry face and rinse with warm water. Salicylic Acid 2% Masque. Use once or twice a week, ideally in the evening, on thoroughly clean, dry skin. Do not use it on wet skin. Apply evenly across the face using fingertips. Leave on for no more than 10 minutes. Rinse thoroughly with lukewarm water. Use sunscreen, wear protective clothing, and limit sun exposure while using this product and for a week afterward. Niacinamide 10% + Zinc 1% Apply a few drops to the face in the morning and evening. Natural Moisturizing Factors + HA Apply as needed.",
+            "price": 29.99,
+            "category": 8,
+            "rating": 4.4,
+            "image": "TO_Kit2.jpg"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50062",
+            "name": "E-Consultation",
+            "description": "Extended consultation for buyers who want to receive an individual skincare plan tailored to the current and personalized needs of the skin. Prepared on the basis of: age, skin type, skin needs, analysis of current care, comorbidities/pregnancy/breastfeeding, cosmetic treatments that the client undergoes. Benefits: you will get to know your skin type, you will get an analysis of your current care and you will learn which products serve you, and on the contrary, you will learn the stages of proper care, you will receive an individual care plan tailored to the current needs of the skin along with information, how to use them, you will learn what may be the cause of the problem and what steps to take to minimize it, you will learn what ingredients to look for in cosmetics and which to avoid, you will receive care tips, after the consultation you will stay in touch with the cosmetologist in case of additional questions and to monitor progress and modify maintenance if necessary. Our professional team is always available for our customers. Enjoy your journey with easy skincare with us.",
+            "price": 1.99,
+            "category": 9,
+            "rating": 5.0,
+            "image": "E_Cons.jpg"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50682",
+            "name": "The Inkey List - Lactic Acid",
+            "description": "Gentle exfoliating serum. This gentle exfoliator is designed to help your skin appear brighter with a more even skin tone, while providing additional hydration. Lactic Acid removes dead cells from the skin's surface, helping it appear brighter and reducing the appearance of fine lines. With moisturizing properties, and added Hyaluronic Acid, it can help to leave the skin softer and smoother. Recommended if you have a dryer or more sensitive skin. It is good for dry skin and sensitive skin types, and helps to gently exfoliate. Contains: 10% Lactic Acid for mild exfoliation and 1% Hyaluronic Acid for extra hydration.  ",
+            "price": 12.99,
+            "category": 4,
+            "rating": 3.3,
+            "image": "TIL_Lactic.jpg"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50775",
+            "name": "Naturium - Mixed Greens Nutrient-Rich Cleanser",
+            "description": "This nutrient-rich gel cleanser is formulated with a daily dose of mixed greens, vitamin C, and nourishing superfruits to remove dirt, oil, makeup, and other impurities while balancing the skin's pH. Removes dirt, oil, makeup and other impurities. Nourishes and balances. Ideal for all skin types. Morning and night, apply 1-2 pumps onto damp skin and massage into a gentle lather for 60 seconds. Rinse thoroughly.",
+            "price": 16.99,
+            "category": 5,
+            "rating": 4.4,
+            "image": "NA_Cleans2.jpg"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50736",
+            "name": "Paula's Choice - Hydrating Gel-to-Cream Cleanser",
+            "description": "This gentle gel-to-cream cleanser removes dirt, oil, and makeup, and rinses away skin-damaging pollutants that can cause premature signs of aging. Superfood complex leaves skin looking fresh and radiant. Unique texture transforms from soothing gel to skin-softening cream. Use as the first step in your skincare routine. This water-soluble cleanser transforms from a soothing gel to a comforting cream when applied to wet skin yet rinses without a greasy residue. Wet face and apply a small amount of cleanser with gentle circular motions. Rinse well. To remove heavy makeup, repeat or use with a clean, wet washcloth.",
+            "price": 15.99,
+            "category": 5,
+            "rating": 4.1,
+            "image": "PC_Cleans.jpg"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50197",
+            "name": "Naturium - Mandelic Topical Acid 12%",
+            "description": "This skin-perfecting acid is formulated with mandelic acid, natural fruit AHAs and niacinamide that gently exfoliate the skin to target the look of dark spots and hyperpigmentation caused by blemishes and photoaging. Slow penetrating AHA gently exfoliates. Increases cell turnover for brighter skin. Helps firm & reduce the look of fine lines. Shake well. Apply an even layer onto the face, neck, and chest, avoiding the eye area. For best results, follow with a moisturizer. If mild sensitivity or redness occurs, reduce the frequency of use until the skin adjusts. Wear SPF during the day. Patch test prior to use is advised.",
+            "price": 20.99,
+            "category": 4,
+            "rating": 4.6,
+            "image": "NA_Mandelic.jpg"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50999",
+            "name": "Naturium - Azelaic Topical Acid 10%",
+            "description": "This direct acid is formulated with a high concentration of glycinated azelaic acid, along with niacinamide, vitamin C, and coffee seed extract, which minimize skin imperfections such as congestion, redness, dullness, and discoloration. We use an advanced azelaic acid derivative clinically proven to provide maximum benefits including normalizing sebum production and hydration. Pure azelaic acid does not reduce sebum production, can be drying, and is challenging to stabilize in formulations at efficacious percentages, especially water-based products. Gently exfoliates. Helps to reduce dark spots. Balances excess oil. Shake well. Apply an even layer onto the face, neck, and chest, avoiding the eye area. For best results, follow with a moisturizer. If mild sensitivity or redness occurs, reduce the frequency of use until the skin adjusts. Wear SPF during the day. Patch test prior to use is advised.",
+            "price": 20.99,
+            "category": 4,
+            "rating": 4.4,
+            "image": "NA_Azelaic.jpg"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50749",
+            "name": "The Ordinary - Lactic Acid 10% + HA",
+            "description": "A high-strength lactic acid superficial peeling formulation. Lactic Acid is an alpha hydroxy acid that exfoliates the skin. This 10% formulation offers mild exfoliation and is supported with a purified Tasmanian pepperberry derivative known to reduce signs of inflammation and sensitivity that is often associated with exfoliation. The pH of this formula is approximately 3.8. Lactic Acid has a pKa of 3.8 and pKa is the most important aspect to consider in formulating with acids. pKa implies acid availability. Apply once per day, ideally in the PM. Can be diluted with other treatments to reduce strength until the skin develops tolerance. Do not use on sensitive, peeling or compromised skin. Avoid contact with eyes. Contact of the product with the skin must be of limited frequency or duration. Use sunscreen, wear protective clothing, and limit sun exposure while using this product and for a week afterward.",
+            "price": 6.99,
+            "category": 4,
+            "rating": 4.6,
+            "image": "TO_Lactic.jpg"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50345",
+            "name": "COSRX - Advanced Snail 92 All in one Cream",
+            "description": "Moisturizer enriched with snail mucin which gives the skin nourishment and moisture without oiliness. 92% of Snail Secretion Filtrate helps to protect the skin from moisture loss while improving skin elasticity. Snail mucin helps repair and soothes red, sensitized skin after breakouts by replenishing moisture. Moisturizing prevents aging. Use after COSRX Advanced Snail 96 Mucin Power Essence to provide moisture and get plump, glowy skin. COSRX is a cruelty-free brand, and we do not test on animals. Our snail mucin products are also 100% cruelty-free, causing no harm to any animals in the process. Gently apply a proper amount of the cream on the face, avoiding the eye and mouth area, after cleansing and toning. Tap the area where the cream was applied gently in order for it to be absorbed along the skin texture.",
+            "price": 25.99,
+            "category": 6,
+            "rating": 4.5,
+            "image": "CSRX_Moist.jpg"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50775",
+            "name": "COSRX - Good morning and Good night Low pH Cleansers Duo",
+            "description": "Good morning, Good night! COSRX Bestsellers, Low pH Duo! Gentle gel type cleanser & peeling gel with mildly acidic pH level. Mild, yet effective. This gentle cleanser and peeling gel does not irritate the skin, but it definitely does its job in removing all impurities from the skin. Low pH peeling gel suitable for daily use and sensitive skin. This gentle, mild, and fragrance-free duo not only cleanses & exfoliates to remove debris and dead skin cells to leave behind a smooth and refined complexion, but also protects and boosts your daily skin condition. The moisturizing formula cleanses the skin without stripping feeling and leaves the skin refreshed, clean and glowy.",
+            "price": 29.99,
+            "category": 5,
+            "rating": 5.0,
+            "image": "CSRX_Cleans.jpg"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50212",
+            "name": "COSRX - All About Snail Kit 4-steps",
+            "description": "Never look tired again. Get that plump skin, full of nourishment, in 4 steps! Skincare essentials formulated with snail mucin for repairing, moisturizing, and soothing skin. Advanced Snail Mucin Gel Cleanser - With 10,000ppm snail secretion filtrate, it protects the skin barrier and does not strip the skin. Advanced Snail 96 Mucin Power Essence - Lightweight yet intense moisturizing essence absorbs very fast into the skin and maximizes skin elasticity. Advanced Snail Peptide Eye Cream - Contains 72% of snail secretion filtrate and peptides to reduce dark circles, fine lines, and wrinkles. Advanced Snail 92 All In One Cream - With 92% of snail secretion filtrate helps repair and soothe sensitized skin after breakouts by replenishing moisture.",
+            "price": 19.99,
+            "category": 8,
+            "rating": 5.0,
+            "image": "CSRX_Kit1.jpg"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50440",
+            "name": "COSRX - Honey Glow Kit-3 steps",
+            "description": "For Dry and Rough Skin. Black Bee Propolis line contains naturally originated moisturizing ingredients which will make your skin glow and smooth without leaving any residue on the skin. Benefits of Propolis: Consisting of black bee propolis extract, honey extract, and royal jelly extract which are known for anti-inflammatory and antibacterial properties. Nourishment and antioxidants: This line delivers nourishment and antioxidants giving you a soft and supple skin texture. A toner that contains 72.6% of black bee propolis and 10% honey extract will make your skin glowy and smooth. COSRX best-selling ampoule which contains 83.25% of black propolis, heals stressed skin and reduces redness without leaving any oily residue. This lightweight gel-like cream made out of 65.69% propolis, absorbs effortlessly into the skin, allowing you to use it under any circumstances during all the seasons throughout the year.",
+            "price": 19.99,
+            "category": 8,
+            "rating": 5.0,
+            "image": "CSRX_Kit2.jpg"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50183",
+            "name": "COSRX - Acne Hero Kit Mild 4-steps",
+            "description": "For combination skin, COSRX mild AC Collection line for clear, smoother, and healthier skin. 4 Step Acne & Blemish Intensive Care for sensitive skin, set contains AC Collection Calming Foam Cleanser. AC Collection Calming Liquid Mild. AC Collection Lightweight Soothing Moisturizer. AC Collection Ultimate Spot Cream. A smart daily acne cleanser that provides both freshness and moisture while fighting acne breakouts leaving the skin soft and smooth without a stripped feeling. An alcohol-free liquid that helps the skin to maintain its oil-moisture balance and calms irritation. A light and non-sticky moisturizer suitable for acne-prone skin. This moisturizer soothes the highly heated sensitive skin and cools down acne-prone skin. With its skin-recovery complex containing Zinc Oxide, Calamine, CentellAC-RX Complex, and Aloe Barbadensis Leaf Water, this spot cream gently and effectively dries out visible acne overnight. A skincare line from COSRX' AC Collection is recommended for sensitive skin or anyone who wants to prevent acne or deals with acne occasionally.",
+            "price": 19.99,
+            "category": 8,
+            "rating": 5.0,
+            "image": "CSRX_Kit3.jpg"
+        }
+    }
+]

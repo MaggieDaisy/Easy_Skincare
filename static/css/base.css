@@ -18,6 +18,7 @@ body {
 .hero {
     background: url('/media/heropic.jpg') no-repeat center center fixed;
     height: 100vh;
+    padding-top: 200px;
 }
 
 /* from Bulma */

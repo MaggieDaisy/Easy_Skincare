@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-size: 100%;
+    background-size: 100rem;
     background-color: black;
     height: calc(100vh - 164px);
     color: white;
@@ -16,9 +16,14 @@ body {
 }
 
 .hero {
-    background: url('/media/heropic.jpg') no-repeat center center fixed;
+    background: url('/media/mh.jpg') no-repeat center center;
     height: 100vh;
-    padding-top: 200px;
+}
+
+.logo {
+    background-image: url(/media/logo.jpg);
+    width: 50px;
+    height: 50px;
 }
 
 /* from Bulma */

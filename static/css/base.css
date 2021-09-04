@@ -15,6 +15,14 @@ body {
     font-family: "Rubik";
 }
 
+#topnav {
+    background-color: #868dec;
+}
+
+.navbar {
+    background-color: #868dec;
+}
+
 .hero {
     background: url('/media/mh.jpg') no-repeat center center;
     height: 100vh;
@@ -31,8 +39,8 @@ body {
     align-items: center;
     display: inline-flex;
     justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.3rem;
+    width: 1.3rem;
 }
 
 .logo-font {
@@ -45,8 +53,9 @@ body {
 
 .shop-now-button {
     background: #868dec;
-    color: white;
+    color: black;
     min-width: 260px;
+    border: 2px solid white;
 }
 
 .btn-black {
@@ -60,8 +69,8 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #d069ca;
+    color: black;
 }
 
 .text-black {

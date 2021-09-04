@@ -54,12 +54,12 @@
 <body>
     <!-- Main header devided on sections - code snippet from Bootstrap and Boutique Ado by CI -->
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
             <!--Brand name with logo and home link -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-black my-0"><img src="{{ MEDIA_URL }}media/logo.jpg" width="50"
-                            height="50">
+                            height="50" class="border border-black">
                         <strong>Easy Skincare</strong></h2>
                 </a>
             </div>
@@ -130,7 +130,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row bg-white">
+        <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                     aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">

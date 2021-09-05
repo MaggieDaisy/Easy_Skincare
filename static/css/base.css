@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-size: 100rem;
+    background-size: cover;
     background-color: black;
     height: calc(100vh - 164px);
     color: white;
@@ -16,6 +16,10 @@ body {
 }
 
 #topnav {
+    background-color: #868dec;
+}
+
+.dropdown-menu {
     background-color: #868dec;
 }
 
@@ -116,5 +120,16 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }

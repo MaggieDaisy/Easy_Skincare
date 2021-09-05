@@ -30,11 +30,11 @@
                     <!-- Card Image -->
                     <div class="card h-100 border-0">
                         {% if product.image %}
-                        <a href="">
+                        <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                         </a>
                         {% else %}
-                        <a href="">
+                        <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.jpg"
                                 alt="{{ product.name }}">
                         </a>
@@ -50,8 +50,7 @@
                                     <p class="lead mb-0 text-left font-weight-bold text text-black">${{ product.price }}
                                     </p>
                                     {% if product.rating %}
-                                    <small class="text-muted text-black"><i
-                                            class="fas fa-star mr-1"></i>{{ product.rating }} /
+                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
                                         5</small>
                                     {% else %}
                                     <small class="text-muted text-black">No Rating</small>

@@ -48,7 +48,7 @@ body {
     background-color: #d069ca;
 }
 
-/* from Bulma */
+/* --- from Bulma --- */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -105,7 +105,7 @@ body {
     z-index: -1;
 }
 
-/* --- Badges for category products */
+/* --- Badges for category products --- */
 
 a.category-badge>span.badge {
     background: #868dec !important;
@@ -115,6 +115,20 @@ a.category-badge>span.badge {
 a.category-badge>span.badge:hover {
     background: #d069ca !important;
     color: black !important;
+}
+
+/* --- Back to the top button --- */
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
 }
 
 

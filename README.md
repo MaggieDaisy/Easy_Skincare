@@ -105,13 +105,15 @@ The structure of the application is based on meeting the first needs of the pote
 
 All users of the website should be able to see the navigation bar, with clickable options, clear and modern content, and a footer with SM icons. The visual impression and design should be also consistent across all pages of the app.
 - **Navigation Bar** on the top of the page which is consistent  - contains names of each site page for browsing easily between them, site logo which acts as a link to the main page, toggle button visible on smaller devices, and icon matching the theme
-- **Home Page** - contains a short introduction, hero image, shop button
-- **About Page** - 
+- **Home/About Page** - contains a short introduction, hero image, shop button
 - **All Products** Page - contains card panels with the presentation of products, button which is clickable for the further view of full product, search bar with the ability to search for the name of cocktail or ingredient
 - **Register Page** - contains fields to fill up with 'Username' and 'Password' and a 'Register' button, and a link to the 'Log In' Page
 - **Log In** Page - contains fields to fill up with 'Username' and 'Password' and a 'Login' button, and a link to the Register Page
 - **Profile** Page - contains information about user and purchase history, this page is available for registered users
 - **Log Out** link - allows user to log out from the profile to protect a data
+- **Shopping Bag** Page - 
+- **Wishlist** Page - 
+- **Checkout** Page -
 - **Footer** on the bottom of the page which is also consistent - contains icons that act as a link to SM platforms
 
 
@@ -140,10 +142,10 @@ A database consists:
 
 
 ### **Surface**
-The visual experience of this project reflects the theme .............
+The visual experience of this project reflects the theme of candy or toy shop.
 > Colors
 
-A blend of dark and pastel colors reflecting the colors of candy and classic elegance. Throughout the whole project main colors and their shades, picked from ,,,,,,,
+A blend of dark and pastel colors reflecting the colors of candy and classic elegance. Throughout the whole project main colors and their shades, picked from coolors
 - color 1 
 - color 2
 - color 3
@@ -153,11 +155,11 @@ A blend of dark and pastel colors reflecting the colors of candy and classic ele
 
 > Typography
 
-Font '............' was used for the clean and transparent experience for the whole body content. Selected from Google Fonts after recommendations other users as an elegant font. This specific one is good for clear readability and the professional layout of the e-commerce with beauty products.
+Font 'Rubik' was used for the clean and transparent experience for the whole body content. Selected from Google Fonts after recommendations other users as one of the top 20 for e-business. This specific one is good for clear readability and the professional layout of the e-commerce store with beauty products.
 
 > Icons 
 
-Icons for Bag, Profile and Social Media logos picked from Font Awesome free collection, the web's most popular icon set and toolkit. 
+Icons for content and Bag, Profile, Wishlist and Social Media logos picked from Font Awesome free collection, the web's most popular icon set and toolkit. 
 
 > Images
 
@@ -237,13 +239,18 @@ Existing features on the site were created for making the User's Experience easy
 * [**Mastering Markdown**](https://guides.github.com/features/mastering-markdown/)– GitHub guide about Markdown. Lightweight and easy-to-use syntax for styling all forms of writing on the GitHub platform.
 * [**W3C Markup Validation Service**](https://validator.w3.org/) - validator was used to check the markup validity of content in HTML and CSS.
 * [**JSHint**](https://jshint.com/) - was used as tool that helps to detect errors and potential problems in JavaScript code.
+* [**Json Formatter**](https://jsonformatter.curiousconcept.com/) - was used as json file formatter and validator
+* [**Json Online Viewer**](https://countwordsfree.com/jsonviewer) - was used to display json file tree view for data base fixtures 
 * [**PEP8 online**](http://pep8online.com/) - was used as tool check the code for PEP8 requirements
 * [**Closing Tag Checker for HTML5**](https://www.aliciaramirez.com/closing-tags-checker/) - was used to validate if all tags are open and close correctly.
 * [**HTML and CSS and JS Formatter**](https://webformatter.com/html) - Free online tool to format an ugly HTML code, making it readable and pretty, with the proper indentation.
 * [**Black**](https://black.vercel.app/) - The uncompromising Python code formatter.
+* [**TempMail**](https://temp-mail.org/) - used to create temporary email adress for testing part
 * [**Grammarly**](https://app.grammarly.com/) - a comprehensive writing tool was used as a helper to write clear and correct text.
 * **Microsoft Paint** - a simple raster graphics editor has been used for editing and resizing pictures.
 * [**FaviconeCodeGenerator**](https://www.faviconcodegenerator.com/) - Favicon Code Generator is Free Online Favicon Converter and has been used to create a little graphic image (icon) associated with a webpage.
+* [**Coolors**](https://coolors.co/image-picker) - The super fast color schemes generator was used to create a color pallet for project from photo/logo image
+
 
 # 5. Testing
 

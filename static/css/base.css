@@ -44,6 +44,10 @@ body {
     height: 50px;
 }
 
+#delivery-banner {
+    background-color: #d069ca;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -69,7 +73,7 @@ body {
 }
 
 .btn-black {
-    background: black;
+    background: #d069ca;
     color: white;
 }
 
@@ -84,7 +88,7 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color: black !important;
 }
 
 .border-black {
@@ -101,9 +105,17 @@ body {
     z-index: -1;
 }
 
-#delivery-banner {
-    background-color: #d069ca;
+a.category-badge>span.badge {
+    background: #868dec !important;
+    color: #fff !important;
 }
+
+a.category-badge>span.badge:hover {
+    background: #d069ca !important;
+    color: #fff !important;
+}
+
+
 
 /* --------------------------------- Media queries */
 

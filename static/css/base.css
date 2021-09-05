@@ -105,14 +105,16 @@ body {
     z-index: -1;
 }
 
+/* --- Badges for category products */
+
 a.category-badge>span.badge {
     background: #868dec !important;
-    color: #fff !important;
+    color: black !important;
 }
 
 a.category-badge>span.badge:hover {
     background: #d069ca !important;
-    color: #fff !important;
+    color: black !important;
 }
 
 

@@ -72,7 +72,8 @@ body {
     border: 2px solid white;
 }
 
-.btn-add {
+.btn-add,
+.btn-check {
     background: #868dec !important;
     color: black !important;
     border: 2px white solid;
@@ -97,7 +98,10 @@ body {
 .shop-now-button:focus,
 .btn-add:hover,
 .btn-add:active,
-.btn-add:focus {
+.btn-add:focus,
+.btn-check:hover,
+.btn-check:active,
+.btn-check:focus {
     background: #d069ca !important;
     color: black;
     border: white 2px solid;

@@ -72,6 +72,22 @@ body {
     border: 2px solid white;
 }
 
+.btn-qnt {
+    background: #d069ca;
+    border: 1px solid white;
+    color: black;
+}
+
+.btn-qnt:hover,
+.btn-qnt:active,
+.btn-qnt:focus {
+    background: #868dec;
+    color: black;
+    border: white 1px solid;
+}
+
+
+
 .btn-add,
 .btn-check {
     background: #868dec !important;

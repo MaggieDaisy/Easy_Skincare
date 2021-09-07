@@ -72,19 +72,35 @@ body {
     border: 2px solid white;
 }
 
-.btn-black {
-    background: #d069ca;
-    color: white;
+.btn-add {
+    background: #868dec !important;
+    color: black !important;
+    border: 2px white solid;
+}
+
+.btn-outline-light {
+    background: white !important;
+    color: black !important;
+    /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:active,
+.btn-outline-light:focus {
+    background: black !important;
+    color: white !important;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #d069ca;
+.btn-add:hover,
+.btn-add:active,
+.btn-add:focus {
+    background: #d069ca !important;
     color: black;
+    border: white 2px solid;
 }
 
 .text-black {

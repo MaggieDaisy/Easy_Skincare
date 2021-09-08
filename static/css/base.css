@@ -174,7 +174,7 @@ a.category-badge>span.badge:hover {
     cursor: pointer;
 }
 
-/* --- Bootstrap toasts  for messages --- */
+/* --- Bootstrap toasts for messages --- */
 .message-container {
     position: fixed;
     top: 72px;
@@ -190,6 +190,7 @@ a.category-badge>span.badge:hover {
     height: 2px;
 }
 
+/* --- Notification preview for shopping bag --- */
 /* --- from CSS-tricks.com https://css-tricks.com/snippets/css/css-triangle/ --- */
 .arrow-up {
     width: 0;
@@ -203,7 +204,6 @@ a.category-badge>span.badge:hover {
 }
 
 /* --- Convenience classes - color copied from Bootstrap --- */
-
 .arrow-primary {
     border-bottom-color: #007bff !important;
 }

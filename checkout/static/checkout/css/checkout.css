@@ -1,3 +1,4 @@
+/* --- Stripe elements --- */
 .StripeElement,
 .stripe-style-input {
     box-sizing: border-box;
@@ -36,6 +37,7 @@
     border: 2px solid #868dec;
 }
 
+/* --- Loading overlay for payment --- */
 #loading-overlay {
     display: none;
     position: fixed;

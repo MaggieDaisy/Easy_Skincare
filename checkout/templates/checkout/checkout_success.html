@@ -32,6 +32,7 @@
         <!-- Order Summary -->
         <div class="col-12 col-lg-7">
             <div class="order-confirmation-wrapper p-2 border">
+                <!-- Order General Informations -->
                 <div class="row">
                     <div class="col">
                         <small class="text-muted">Order Info:</small>
@@ -53,6 +54,7 @@
                         <p class="mb-0">{{ order.date }}</p>
                     </div>
                 </div>
+                <!-- Order Detailed Informations -->
                 <div class="row">
                     <div class="col">
                         <small class="text-muted">Order Details:</small>
@@ -71,7 +73,7 @@
                     </div>
                 </div>
                 {% endfor %}
-
+                <!-- Delivery Informations -->
                 <div class="row">
                     <div class="col">
                         <small class="text-muted">Delivering To:</small>
@@ -152,6 +154,7 @@
                         <p class="mb-0">{{ order.phone_number }}</p>
                     </div>
                 </div>
+                <!-- Billing Informations -->
                 <div class="row">
                     <div class="col">
                         <small class="text-muted">Billing Info:</small>
@@ -184,7 +187,6 @@
             </div>
         </div>
     </div>
-
     <!-- Button returning to special offers -->
     <div class="row">
         <div class="col-12 col-lg-7 text-right">
@@ -192,7 +194,7 @@
                 <span class="icon mr-2">
                     <i class="fas fa-gift"></i>
                 </span>
-                <span class="text-uppercase">Now check out our special offers!</span>
+                <span class="text-uppercase">Check out our special offers!</span>
             </a>
         </div>
     </div>

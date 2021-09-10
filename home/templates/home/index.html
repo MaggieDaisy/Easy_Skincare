@@ -10,6 +10,7 @@
 {% endblock %}
 
 {% block content %}
+<!-- Home/About page header with hero picture -->
 <section class="container-fluid hero pb-5">
     <div class="container h-100">
         <div class="row h-100">
@@ -28,7 +29,7 @@
     </div>
 </section>
 <hr style="height:2px;border-width:0;color:#868dec;background-color: #868dec">
-
+<!-- Section with cards  -->
 <section class="container-fluid">
     <div class="row">
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -41,9 +42,8 @@
                     <hr style="height:2px;border-width:0;color:#868dec;background-color: #868dec">
                     <h5 class="text-black">You don't need to do or spent much, but only use suitable products and stay
                         consistent </h5>
-                    <i class="fas fa-hand-point-up fa-lg" style="color: #868dec;"></i>
                     <hr style="height:2px;border-width:0;color:#868dec;background-color: #868dec">
-                    <p class="mb-0 text-black">
+                    <p class="mb-0 text-black"><i class="fas fa-hand-point-up fa-lg" style="color: #868dec;"></i>
                         Discover the beauty of your skin by simple treatment routines. Our products are recommended by
                         dermatologists and cosmetic formulators known all around the world. All of them simply agree,
                         that for healthy and glowing-looking skin, without any bigger issues, you just have to follow
@@ -52,9 +52,6 @@
                 </div>
             </div>
         </div>
-
-
-
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
             <div class="card h-100 border-0">
                 <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}hydration.jpg" alt="">
@@ -100,9 +97,6 @@
                 </div>
             </div>
         </div>
-
-
-
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
             <div class="card h-100 border-0">
                 <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}cream.jpg" alt="">
@@ -139,7 +133,6 @@
                 </div>
             </div>
         </div>
-
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
             <div class="card h-100 border-0">
                 <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}cosmetolog.jpg" alt="">
@@ -148,21 +141,24 @@
                         you have skin issues or concerns about skincare products? No worries we are here to guide you!
                     </h4>
                     <hr style="height:2px;border-width:0;color:#868dec;background-color: #868dec">
-                    <h5 class="text-black">You don't need to do or spent much, but only use suitable products and stay
-                        consistent </h5>
-                    <i class="fas fa-hand-point-up fa-lg" style="color: #868dec;"></i>
                     <p class="mb-0 text-black">
-                        Discover the beauty of your skin by simple treatment routines. Our products are recommended by
-                        dermatologists and cosmetic formulators known all around the world. All of them simply agree,
-                        that for healthy and glowing-looking skin, without any bigger issues, you just have to follow
-                        simple routines, and use adequate products without harm and irritative ingredients.
+                        Dreaming about healthy-looking skin? Make a contact with Us today and explain your issues and
+                        expectations, after that you will receive from our specialist a full program about simple
+                        skincare routines, and a list of products recommended to use, you will stay in touch until your
+                        goals will be achieved and you will be fully satisfied with results.
                     </p>
+                    <!-- Button to purchase e-consultation from products selection -->
+                    <a href="{% url 'products' %}?category=econsultation"
+                        class="btn btn-light btn-check rounded-0 my-2">
+                        <span class="icon mr-2">
+                            <i class="fas fa-shopping-bag"></i>
+                        </span>
+                        <span class="text-uppercase">Get your E-consultation here</span>
+                    </a>
                 </div>
             </div>
         </div>
-
     </div>
-
 </section>
 
 {% endblock %}

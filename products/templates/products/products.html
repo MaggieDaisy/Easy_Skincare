@@ -26,7 +26,6 @@
             <hr style="height:1px; color:#868dec;background-color: #868dec">
         </div>
     </div>
-    <!-- Card for the product -->
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="row mt-1 mb-2">
@@ -68,6 +67,7 @@
                     </p>
                 </div>
             </div>
+            <!-- Card for the product -->
             <div class="row">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -87,8 +87,10 @@
                         <div class="card-body pb-0">
                             <p class="mb-0 text-black">{{ product.name }}</p>
                         </div>
+
                         <!-- Card Footer with price, rating and category name-->
                         <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <hr style="height:2px;border-width:0;color:#d069ca;background-color: #d069ca">
                             <div class="row">
                                 <div class="col">
                                     <p class="lead mb-0 text-left font-weight-bold text text-black">${{ product.price }}

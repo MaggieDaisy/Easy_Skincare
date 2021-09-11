@@ -187,15 +187,26 @@
             </div>
         </div>
     </div>
-    <!-- Button returning to special offers -->
+
     <div class="row">
         <div class="col-12 col-lg-7 text-right">
+            <!-- Button returning to profile -->
+            {% if form_profile %}
+            <a href="{% url 'profile' %}" class="btn btn-outline-light rounded-0 my-2">
+                <span class="icon mr-2">
+                    <i class="fas fa-angle-left"></i>
+                </span>
+                <span class="text-uppercase">Back to Profile</span>
+            </a>
+            <!-- Button returning to special offers -->
+            {% else %}
             <a href="{% url 'products' %}?category=kits,econsultation" class="btn btn-light btn-check rounded-0 my-2">
                 <span class="icon mr-2">
                     <i class="fas fa-gift"></i>
                 </span>
                 <span class="text-uppercase">Check out our special offers!</span>
             </a>
+            {% endif %}
         </div>
     </div>
 </div>

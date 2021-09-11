@@ -1,3 +1,4 @@
+from checkout.models import Order
 from django.contrib import messages
 from django.shortcuts import get_object_or_404, render
 
@@ -23,6 +24,26 @@ def profile(request):
         "form": form,
         "profile": profile,
         "orders": orders,
+    }
+
+    return render(request, template, context)
+
+
+def order_history(request, order_number):
+    order = get_object_or_404(Order, order_number=order_number)
+
+    messages.info(
+        request,
+        (
+            f"This is past confirmation for order number { order_number}. "
+            "A confirmation email was sent on the order date."
+        ),
+    )
+
+    template = "checkout/checkout_success.html"
+    context = {
+        "order": order,
+        "form_profile": True,
     }
 
     return render(request, template, context)

@@ -33,11 +33,6 @@ body {
     background-color: #868dec;
 }
 
-.hero {
-    background: url('/media/mh.jpg') no-repeat center center;
-    height: 100vh;
-}
-
 .logo {
     background-image: url('/media/logo.jpg');
     width: 50px;

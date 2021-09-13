@@ -1,4 +1,5 @@
-<img src="docs/pictures/readme.jpg" style="margin: 0;">
+<img src="docs/pictures/readme_hero.jpg" style="margin: 0;">
+
 
 # Easy Skincare
 
@@ -16,13 +17,13 @@
 
 # 1. Project purpose and introduction
 
-This project was created to demonstrate the acquisition of broader coding skills as part of the Code Institute Fullstack Web Developer Course. Technologies used during the application development process are mainly: HTML, CSS, JavaScript, Python+Django with an additional framework such as Bootstrap. This project aims to create a full-stack e-commerce application that will allow the user to view an asortment, make a secure purchase, leave a comment, store personal data, and get e-consultation.
+This complex project was created to demonstrate the acquisition of broader coding skills as part of the Code Institute Fullstack Web Developer Course. Technologies used during the application development process are mainly: HTML, CSS, JavaScript, Python+Django with an additional framework such as Bootstrap. In addition, to handle the payments section for this site, Stripe handles online tests were used and as a relational database accordingly Heroku Postgres. This project aims to create a full-stack e-commerce application that allows users/shoppers to view a full assortment, add products to the shopping bag, make a secure purchase, leave a review for products, create a wishlist, store personal data for orders, and get e-consultation via email. For store management application allows manipulating easily through the products database, meaning adding, editing/updating, deleting items. 
 
 # Easy Skincare 
 
 [**View the live project here**](https://hdhdhddahdyfgsjsklslslsllsls.herokuapp.com/)
 
-Easy Skincare is a full-stack application that allows users to interact on the page. The purpose of this app is to demonstrate and search for skincare products, add rewievs, contact for consultation. This app can benefit skincare enthusiasts who like to experiment with products with clear INCI lists and are recommended by dermatologists. The website offers the possibility to users to store their data, add review and make a purchase. This website is designed in such a way that the user can check it at any time, on the phone on the road, or at home on the computer. The project may be expanded in the future with other, more detailed cetegories. 
+Easy Skincare is a full-stack application for a non-existing/fictional brand, that allows users to interact on the page. The purpose of this app is to demonstrate and search for skincare products, add reviews, contact for consultation. This app can benefit skincare enthusiasts who like to experiment with products with clear INCI lists and are recommended by dermatologists. The website offers the possibility to users to store their data for later orders, add products to the wishlist, and make a secure purchase. This website is designed in such a way that the user can check it at any time, and on any device, like on the phone/tablet on the road, or at home on the computer. This project may be expanded successfully in the future with other, more detailed categories and services. 
 
 
 <img src="docs/pictures/amiresponsive.jpg" style="margin: 0;">

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% load bag_tools %}
+
 
 {% block page_header %}
 <div class="container header-container">
@@ -24,7 +24,7 @@
 
     <div class="row">
         <div class="col">
-            {% for product in wishlist.products.all %}
+            {% for product in products %}
             <div class="table-responsive rounded">
                 <table class="table table-sm table-borderless">
                     <tr>
@@ -58,7 +58,6 @@
         </div>
     </div>
 </div>
-
 
 
 {% endblock %}

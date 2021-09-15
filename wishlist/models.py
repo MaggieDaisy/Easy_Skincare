@@ -10,7 +10,7 @@ class Wishlist(models.Model):
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        related_name="orders",
+        related_name="wishlist_products",
     )
     product = models.ForeignKey(
         Product, null=False, blank=False, on_delete=models.CASCADE

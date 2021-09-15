@@ -88,7 +88,7 @@
                             <p class="mb-0 text-black">{{ product.name }}</p>
                         </div>
 
-                        <!-- Card Footer with price, rating and category name-->
+                        <!-- Card Footer with price, rating, category, wishlist -->
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <hr style="height:2px;border-width:0;color:#d069ca;background-color: #d069ca">
                             <div class="row">
@@ -115,6 +115,10 @@
                                         <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                                     </small>
                                     {% endif %}
+                                    <p>
+                                        <a href="{% url 'wishlist' %}" class="text-muted"><i
+                                                class="fas fa-heart mr-1 text-black"></i>
+                                            Wishlist </a></p>
                                 </div>
                             </div>
                         </div>

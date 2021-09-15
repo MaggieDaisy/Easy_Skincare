@@ -12,12 +12,10 @@ def wishlist(request):
     profile = UserProfile.objects.get(user=request.user)
     wishlisted_products = [
         wishlist_entry.product
-        for wishlist_entry in Wishlist.objects(
-            user_profile=profile,
-        )
+        for wishlist_entry in profile.wishlist_products.all()
     ]
 
-    return render("wishlist.html", {"products": wishlisted_products})
+    return render(request, "wishlist.html", {"products": wishlisted_products})
 
 
 @login_required

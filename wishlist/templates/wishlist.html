@@ -44,17 +44,20 @@
                         </td>
                     </tr>
                 </table>
-                {% endfor %}
+
             </div>
             {% empty %}
 
-            <p class="lead mb-5">Looks like your wishlist is empty</p>
+            <p class="lead mb-5">Looks like your wishlist is empty, if you want to save favorite products for future,,,
+            </p>
             <a href="{% url 'products' %}" class="btn btn-outline-light rounded-0 btn-lg">
                 <span class="icon">
                     <i class="fas fa-chevron-left"></i>
                 </span>
                 <span class="text-uppercase">Continue Shopping</span>
             </a>
+            {% endfor %}
+
         </div>
     </div>
 </div>

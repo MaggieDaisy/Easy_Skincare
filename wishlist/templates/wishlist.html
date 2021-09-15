@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bag_tools %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- Header for Wishlist Page -->
+<div class="overlay"></div>
+<div class="container mb-2">
+    <div class="row">
+        <div class="col">
+            <hr style="height:1px; color:#868dec;background-color: #868dec">
+            <h2 class="logo-font mb-4">Your Wishlist</h2>
+            <hr style="height:1px; color:#868dec;background-color: #868dec">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            {% for product in wishlist.products.all %}
+            <div class="table-responsive rounded">
+                <table class="table table-sm table-borderless">
+                    <tr>
+                        <td class="p-3 w-25">
+                            {% if item.product.image %}
+                            <img class="img-fluid rounded" src="{{ item.product.image.url }}"
+                                alt="{{ item.product.name }}">
+                            {% else %}
+                            <img class="" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ item.product.name }}">
+                            {% endif %}
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0 text-light"><strong>{{ item.product.name }}</strong></p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0 text-light">${{ item.product.price }}</p>
+                        </td>
+                    </tr>
+                </table>
+                {% endfor %}
+            </div>
+            {% empty %}
+
+            <p class="lead mb-5">Looks like your wishlist is empty</p>
+            <a href="{% url 'products' %}" class="btn btn-outline-light rounded-0 btn-lg">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Continue Shopping</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

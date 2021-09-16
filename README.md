@@ -137,7 +137,7 @@ A database consists:
 - categories
 - products
 
-Database for products and categories was collected and basically self-written only for the purpose of this particular project (disclaimer for imagery, names, descriptions, and all information can be found in the Credit section of this file). During the development process for that purpose was used SQLite and during the production process Heroku Postgres. The database idea for products was taken from a walkthrough project by Code Institute by first creating JSON files and store them in the fixtures folder in the products app. Otherwise, the database document for models is shown in a separate diagram. 
+Database for products and categories was collected and basically self-written only for the purpose of this particular project (disclaimer for imagery, names, descriptions, and all information can be found in the Credit section of this file). During the development process for that purpose was used SQLite and during the production process Heroku Postgres. The database idea for products was taken from a walkthrough project by Code Institute by first creating JSON files and store them in the fixtures folder in the products app. Database documenting models is shown in a separate diagram. 
 
 <img src="docs/database/data.jpg" style="margin: 0;">
 

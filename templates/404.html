@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<!-- Page for error 404 -->
+<div class="overlay"></div>
+<div class="container mb-2">
+    <div class="row">
+        <div class="col">
+            <hr style="height:1px; color:#868dec;background-color: #868dec">
+            <h2 class="logo-font mb-4">Ooohhhh noo, it seems that you have came along to the wrong address</h2>
+            <hr style="height:1px; color:#868dec;background-color: #868dec">
+
+            <a class="btn btn-light btn-lg  mt-5" href="{% url 'home' %}">
+                <span class="icon">
+                    <i class="fas fa-home"></i>
+                </span>
+                <span class="text-uppercase font-weight-bold text-light">Come Back Home</span>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

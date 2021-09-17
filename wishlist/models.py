@@ -7,15 +7,12 @@ from profiles.models import UserProfile
 class Wishlist(models.Model):
     user_profile = models.ForeignKey(
         UserProfile,
-        on_delete=models.SET_NULL,
+        on_delete=models.CASCADE,
         null=True,
         blank=True,
-        related_name="wishlist_products",
+        related_name="wishlists",
     )
-    product = models.ForeignKey(
-        Product, null=False, blank=False, on_delete=models.CASCADE
-    )
-    date = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
-        return self.product.name
+    products = models.ManyToManyField(Product)
+
+    date = models.DateTimeField(auto_now_add=True)

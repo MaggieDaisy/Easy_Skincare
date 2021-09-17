@@ -10,12 +10,9 @@ from wishlist.models import Wishlist
 @login_required
 def wishlist(request):
     profile = UserProfile.objects.get(user=request.user)
-    wishlisted_products = [
-        wishlist_entry.product
-        for wishlist_entry in profile.wishlist_products.all()
-    ]
+    wishlist = Wishlist.objects.filter(user_profile=profile)
 
-    return render(request, "wishlist.html", {"products": wishlisted_products})
+    return render(request, "wishlist.html", {"wishlists": wishlist})
 
 
 @login_required
@@ -27,11 +24,9 @@ def add_to_wishlist(request, item_id):
     redirect_url = request.POST.get("redirect_url")
 
     profile = UserProfile.objects.get(user=request.user)
-    wishlist_entry = Wishlist(
-        user_profile=profile,
-        product=product,
-    )
-    wishlist_entry.save()
+    wishlists = Wishlist.objects.create(user_profile=profile)
+    wishlists.products.add(product)
+    wishlists.save()
     messages.success(request, f"Added {product.name} to your wishlist")
 
     return redirect(redirect_url)

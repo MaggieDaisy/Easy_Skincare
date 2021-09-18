@@ -12,7 +12,7 @@ html {
 body {
     background-size: cover;
     background-color: black;
-    height: calc(100vh - 164px);
+    min-height: calc(100vh - 200px - 200px);
     color: white;
     font-family: 'Rubik', sans-serif;
 }
@@ -326,6 +326,7 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/* --- Footer --- */
 
 
 /* ------------ Media queries --------------- */

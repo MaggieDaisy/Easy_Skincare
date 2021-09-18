@@ -331,6 +331,10 @@ input[name='q']::placeholder {
     background-color: #f5ddf4;
 }
 
+.card-footer {
+    background-color: #d8dbf9 !important;
+}
+
 /* ------------ Media queries --------------- */
 
 /* Slightly larger container on xl screens */

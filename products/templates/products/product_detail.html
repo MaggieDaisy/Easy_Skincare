@@ -111,7 +111,42 @@
             </div>
         </div>
     </div>
+
+    <!-- Product Reviews-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-5">
+                <h2 class="logo-font">Reviews</h2>
+                <hr style="height:1px; color:#868dec;background-color: #868dec">
+                {% if request.user.is_authenticated %}
+                <!-- Form to Add review-->
+                <a href="{% url 'add_review' product.id %}" class="btn btn-outline-light rounded-0">
+                    Add a Review
+                </a>
+                {% else %}
+                <p class="small">To share a review you need to be logged in</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="row mt-5 pb-5">
+            {% for review in reviews %}
+            <div class="col-12 col-lg-4 text-center">
+                <div class="notification bg-light text-black">
+                    <p><strong>Date posted: </strong>"{{ review.date_posted }}"</p>
+                </div>
+                <div class="notification">
+                    <p><strong>Honest opinion: </strong> "{{ review.content }}"</p>
+                </div>
+                <div class="notification">
+                    <p><strong>Aded by: </strong> {{ review.user }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
+
 {% endblock %}
 
 {% block postloadjs %}

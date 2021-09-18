@@ -326,9 +326,10 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-/* --- Footer--- */
-
-
+/* --- Card --- */
+.card-body {
+    background-color: #f5ddf4;
+}
 
 /* ------------ Media queries --------------- */
 

@@ -112,27 +112,30 @@
         </div>
     </div>
 
-    <!-- Product Reviews-->
+    <!-- Product Review Header-->
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-5">
                 <h2 class="logo-font">Reviews</h2>
                 <hr style="height:1px; color:#868dec;background-color: #868dec">
+                <h5>If you want to share opinion about this product</h5>
                 {% if request.user.is_authenticated %}
-                <!-- Form to Add review-->
-                <a href="{% url 'add_review' product.id %}" class="btn btn-outline-light rounded-0">
-                    Add a Review
+                <!-- Button for Add review-->
+                <a href="{% url 'add_review' product.id %}" class="btn btn-add rounded-0 btn-lg mt-3">
+                    <i class="fas fa-feather-alt"></i> Add a Review
                 </a>
                 {% else %}
-                <p class="small">To share a review you need to be logged in</p>
+                <a href="{% url 'profile' %}">Sign in/Sign up here first</a>
                 {% endif %}
             </div>
         </div>
-
-        <div class="row mt-5 pb-5">
+        <!-- Product Reviews Content -->
+        <div class="review-wrapper mt-5">
             {% for review in reviews %}
-            <div class="col-12 col-lg-4 text-center">
-                <div class="notification bg-light text-black">
+            <hr
+                style="height:2px; color: white;background-color:white;width:50%; margin-left:25% !important; margin-right:25% !important;">
+            <div class=" text-center">
+                <div class="notification">
                     <p><strong>Date posted: </strong>"{{ review.date_posted }}"</p>
                 </div>
                 <div class="notification">

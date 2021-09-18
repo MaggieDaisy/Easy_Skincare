@@ -21,7 +21,7 @@
             <hr style="height:1px; color:#868dec;background-color: #868dec">
         </div>
     </div>
-    <div class="row">
+    <div class="row container">
         <div class="col">
             {% for wishlist in wishlists %}
             {% for product in wishlist.products.all %}
@@ -32,6 +32,8 @@
                             <th scope="col">Product</th>
                             <th scope="col">Name</th>
                             <th scope="col">Price</th>
+                            <th scope="col">Review</th>
+                            <th scope="col">Bag</th>
                         </tr>
                     </thead>
                     <tr>
@@ -42,11 +44,21 @@
                             <img class="" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.name }}">
                             {% endif %}
                         </td>
-                        <td class="py-3 w-50">
+                        <td class="p-3 w-20">
                             <p class="my-0 text-light"><strong>{{ product.name }}</strong></p>
                         </td>
-                        <td class="py-3 w-25">
+                        <td class="p-3 w-20">
                             <p class="my-0 text-light">${{ product.price }}</p>
+                        </td>
+                        <td class="p-3 w-20">
+                            <a href="{% url 'add_review' product.id %}" class="btn btn-add rounded-0 mt-3">
+                                <i class="fas fa-feather-alt"></i> Add a Review
+                            </a>
+                        </td>
+                        <td class="p-3 w-20">
+                            <a href="{% url 'product_detail' product.id %}" class="btn btn-add rounded-0 mt-3">
+                                <i class="fas fa-shopping-bag"></i> Add to Bag
+                            </a>
                         </td>
                     </tr>
                 </table>
@@ -61,9 +73,8 @@
                 </span>
                 <span class="text-uppercase">Continue Shopping</span>
             </a>
+            {% endfor %}
         </div>
     </div>
-    {% endfor %}
 </div>
-
 {% endblock %}

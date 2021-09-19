@@ -121,25 +121,30 @@ All users of the website should be able to see the navigation bar, with clickabl
 [**Wireframes:**](docs/wireframes/MS4_Wireframes.pdf)
 
 A website with different separate content pages and the possibility to navigate between them
-- Header – fixed navigation bar with logo, brand name, and clickable dropdown links for product categories, search bar
+- Header – fixed navigation bar with logo, brand name, and clickable dropdown links for product categories, search bar for browsing key word
 - Sections called:
-    - Home (consider also as About page), 
-    - Search bar for browsing keywords, 
-    - All Products, and further main categories and subcategories 
+    - Home (considered also as About page) - introducing user to purpose of the store 
+    - All Products page, and further main categories pages 
     - My account with dropdown for log in, register, log out, profile, admin links
-   - Wishlist,
-    - Shopping bag,
-- Footer – a footer with social media icons, email, disclaimer, and copyright  
+    - Wishlist for storing favourites products 
+    - Shopping bag and further checkout page for purchasing products
+    - Footer – a footer with social media icons, email, disclaimer, and copyright
 
-[**Database:**](docs/database.pdf)
+[**Database:**](docs/ERD_for_MS4.pdf)
 
-A database consists:
+A database created for this project consists models for:
 - categories
 - products
+- users
+- users profile
+- orders
+- order items
+- wishlist
+- reviews 
 
-Database for products and categories was collected and basically self-written only for the purpose of this particular project (disclaimer for imagery, names, descriptions, and all information can be found in the Credit section of this file). During the development process for that purpose was used SQLite and during the production process Heroku Postgres. The database idea for products was taken from a walkthrough project by Code Institute by first creating JSON files and store them in the fixtures folder in the products app. Database documenting models is shown in a separate diagram. 
+Database for products and categories was collected and basically self-written only for the purpose of this particular project (disclaimer for imagery, names, descriptions, and all information can be found in the Credit section of this file). During the development process for that purpose was used SQLite and during the production process Heroku Postgres. The database idea for products was taken from a walkthrough project by Code Institute by first creating JSON files and store them in the fixtures folder in the products app. Database documenting models is shown in a separate diagram above. 
 
-<img src="docs/database/data.jpg" style="margin: 0;">
+<img src="docs/database/data.jpg" style="margin: 0;">  admin database 
 
 
 ### **Surface**

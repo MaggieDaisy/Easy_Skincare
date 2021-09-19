@@ -128,9 +128,9 @@ A website with different separate content pages and the possibility to navigate 
     - My account with dropdown for log in, register, log out, profile, admin links
     - Wishlist for storing favorites products 
     - Shopping bag and further checkout page for purchasing products
-    - Footer – a footer with social media icons, email, disclaimer, and copyright
+- Footer – a footer with social media icons, email, disclaimer, and copyright
 
-[**Database:**](docs/ERD_for_MS4.pdf)
+[**Database:**](docs/database/ERD_for_MS4.pdf)
 
 A database created for this project consists of models for:
 - categories
@@ -261,16 +261,16 @@ Existing features on the site were created for making the User's Experience easy
 # 5. Testing
 
 The final result of this project is a full-stack, front-end and back-end web application based on the principles of user experience design, accessibility, and functionality. 
-**This is an interactive front-end and back-end web application developed and implemented by using HTML, CSS, JavaScript, Python+Django, with additional Materialize and jQuery elements**, so required testing was conducted based on functionality for getting and storing data, visual effects, website layout, and interactive actions which user can take during navigation.
+**This is an interactive front-end and back-end web application developed and implemented by using HTML, CSS, JavaScript, Python+Django, with additional Bootstrap elements**, so required testing was conducted based on functionality for getting and storing data, visual effects, website layout, and interactive actions which user can take during navigation and purchasing products.
 
 **General manual and further testing results, like user stories, CRUD, code validation :** ---> please click [**HERE**](tests.md)
 
 
 # 6. Project barriers and solutions
 
-- ,,,,,,,,,,,,,,,,, This section will come during and after development process
+- After inserting the home page index.html into the code validator error has been found, and fixed by simply removing <br> tags and adding `d-block` classes for the <li></li> tags instead, just to display all elements in separate lines inside card body
 
-<img src="docs/pictures/.........jpg" style="margin: 0;">
+<img src="docs/pictures/brtag_error.jpg" style="margin: 0;">
 
 
 # 7. Version Control
@@ -317,16 +317,10 @@ All the images used in this site to provide product visuality were picked from p
 
 - [**Unsplash**](https://unsplash.com/) - a website dedicated to sharing stock photography for free for every kind of project
 
-- [**Pexels**](https://www.pexels.com/) - the best free stock photos & videos shared by talented creators
-
-- [**Pixabay**](https://pixabay.com/) - a stunning free images & royalty free stock
-
-- [**FAVPNG**](https://favpng.com/) - a database of free transparent PNG Images 
-
 > Code
-- Code inspiration for the whole project and code snippets borrowed from 'Boutique Ado' Walkthrough Project by CI 
-- Credit - ,,,,,,,  [****](https:)
-- Credit - vanilla JavaScript code snippet for  ,,,,,,,
+- Code inspiration for the whole project and code snippets for the fundamental base structure borrowed from Walkthrough Project created by CI - [**Boutique Ado**](https://mag-boutique-ado.herokuapp.com/)
+- Code inspiration for Review model borrowed and adapted from tutorial - [**Product reviews - How to build an Ecommerce website using Django**](https://www.youtube.com/watch?v=Y5vvGQyHtpM)
+- Code inspiration for Wishlist model borrowed and adpated, after second learning session, from my mentor Sandeep Aggarwal
 
 
 # 10. Acknowledgments
@@ -334,8 +328,7 @@ All the images used in this site to provide product visuality were picked from p
 - Inspiration for this project was the walkthrough full e-commerce project "Boutique Ado" created by CI
 - I would like to thank: 
     - Code Institute tutors for creating inspiring content for the course and support during learning process,
-    - Slack Community, students and leaders, for being available and helpful every single time when needed,
-    - someone ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    - Slack Community, students and leaders, for being available and very helpful every single time when needed,
     - and last but not least my mentor Sandeep Aggarwal for his guidance, patience, and effort during the development process
 
 

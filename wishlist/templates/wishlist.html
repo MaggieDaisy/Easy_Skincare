@@ -32,8 +32,7 @@
                             <th scope="col">Product</th>
                             <th scope="col">Name</th>
                             <th scope="col">Price</th>
-                            <th scope="col">Review</th>
-                            <th scope="col">Bag</th>
+                            <th scope="col">Add To</th>
                         </tr>
                     </thead>
                     <tr>
@@ -44,20 +43,18 @@
                             <img class="" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.name }}">
                             {% endif %}
                         </td>
-                        <td class="p-3 w-20">
+                        <td>
                             <p class="my-0 text-light"><strong>{{ product.name }}</strong></p>
                         </td>
-                        <td class="p-3 w-20">
+                        <td>
                             <p class="my-0 text-light">${{ product.price }}</p>
                         </td>
-                        <td class="p-3 w-20">
+                        <td>
                             <a href="{% url 'add_review' product.id %}" class="btn btn-add rounded-0 mt-3">
-                                <i class="fas fa-feather-alt"></i> Add a Review
+                                <i class="fas fa-feather-alt"></i> Review
                             </a>
-                        </td>
-                        <td class="p-3 w-20">
                             <a href="{% url 'product_detail' product.id %}" class="btn btn-add rounded-0 mt-3">
-                                <i class="fas fa-shopping-bag"></i> Add to Bag
+                                <i class="fas fa-shopping-bag"></i> Bag
                             </a>
                         </td>
                     </tr>

@@ -326,13 +326,22 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-/* --- Card --- */
+/* --- Cards --- */
 .card-body {
     background-color: #f5ddf4;
 }
 
 .card-footer {
     background-color: #d8dbf9 !important;
+}
+
+/* --- Toasts --- */
+.toast-header {
+    background-color: #d8dbf9 !important;
+}
+
+.toast-body {
+    background-color: #f5ddf4 !important;
 }
 
 /* ------------ Media queries --------------- */

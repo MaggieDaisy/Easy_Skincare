@@ -121,18 +121,18 @@ All users of the website should be able to see the navigation bar, with clickabl
 [**Wireframes:**](docs/wireframes/MS4_Wireframes.pdf)
 
 A website with different separate content pages and the possibility to navigate between them
-- Header – fixed navigation bar with logo, brand name, and clickable dropdown links for product categories, search bar for browsing key word
+- Header – fixed navigation bar with logo, brand name, and clickable dropdown links for product categories, search bar for browsing keyword
 - Sections called:
-    - Home (considered also as About page) - introducing user to purpose of the store 
+    - Home (considered also as About page) - introducing the user to the purpose of the store 
     - All Products page, and further main categories pages 
     - My account with dropdown for log in, register, log out, profile, admin links
-    - Wishlist for storing favourites products 
+    - Wishlist for storing favorites products 
     - Shopping bag and further checkout page for purchasing products
     - Footer – a footer with social media icons, email, disclaimer, and copyright
 
 [**Database:**](docs/ERD_for_MS4.pdf)
 
-A database created for this project consists models for:
+A database created for this project consists of models for:
 - categories
 - products
 - users
@@ -153,7 +153,7 @@ The visual experience of this project reflects the theme of candy or toy shops. 
 
 > Colors
 
-A contrasting blend of a dark background and pastel colors for the features reflecting the classic elegance and simplicity. On the other hand white fields for the cards and forms are easy to look at and show clearly core pieces of information. Throughout the whole project, main colors were picked from coolors.co, after matching them with the brand logo 
+A contrasting blend of a dark background and pastel colors for the features reflecting the classic elegance and simplicity. On the other hand white fields for the forms are easy to look at and show clearly core pieces of information. Throughout the whole project, main colors were picked from coolors.co, after matching them with the brand logo, in addition, lighter shades of the main colors have been found to apply them to the cards body and toasts. 
 
 
 <img src="docs/pictures/palette_of_colors.jpg" style="margin: 0;">
@@ -239,6 +239,7 @@ Existing features on the site were created for making the User's Experience easy
 * [**Google Chrome Developer Tools**](https://developers.google.com/web/tools/chrome-devtools) - this built-in developer tool was used to inspect page elements and help debug issues with the site layout and test different styles
 * [**Mobile-Friendly Test Tool**](https://search.google.com/test/mobile-friendly) - The Mobile-Friendly test tool was used to check if an application is designed for mobile devices.
 * [**Balsamiq Wireframe**](https://balsamiq.com/wireframes/) - these quick and handful tool was used to create wireframes for planning project structure and layout.
+* [**Lucidchart**](https://lucid.co/product/lucidchart) - The intelligent diagramming application for every team
 * [**Am I Responsive Bookmarklet**](http://ami.responsivedesign.is/) - Multi Device Website Mockup Generator was used to create the Mockup image for this README file.
 * [**Make a README**](https://www.makeareadme.com/) – a page that shows suggestions on how to create a good Readme file.
 * [**Mastering Markdown**](https://guides.github.com/features/mastering-markdown/)– GitHub guide about Markdown. Lightweight and easy-to-use syntax for styling all forms of writing on the GitHub platform.

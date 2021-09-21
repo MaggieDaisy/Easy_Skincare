@@ -383,7 +383,7 @@ input[name='q']::placeholder {
     }
 
     .nav-link {
-        padding: 0.15rem;
+        padding: 0.12rem;
     }
 
     .nav-link i.fa-lg {
@@ -391,8 +391,8 @@ input[name='q']::placeholder {
     }
 
     .navbar-toggler {
-        padding: .6rem .6rem;
-        font-size: 1rem;
+        padding: .4rem .4rem;
+        font-size: .8rem;
     }
 
     #delivery-banner h4 {
@@ -429,8 +429,21 @@ input[name='q']::placeholder {
 
 /*--- Media Query to fix top navbar only on super small screens --- */
 @media (max-width: 320px) {
-
     .navbar {
-        padding: 0;
+        padding: 2px;
+    }
+
+
+    .nav-link {
+        padding: 0.12rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .4rem .4rem;
+        font-size: .8rem;
     }
 }

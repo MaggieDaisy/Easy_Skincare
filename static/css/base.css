@@ -114,7 +114,7 @@ body {
 .btn-outline-light {
     background: white !important;
     color: black !important;
-    /* use important to override link colors for <a> elements */
+    /* necessary important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
@@ -242,7 +242,6 @@ input[name='q']::placeholder {
 }
 
 /* --- Allauth form formatting --- */
-
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
     /* mt-4 */
@@ -298,8 +297,7 @@ input[name='q']::placeholder {
     /* text-info */
 }
 
-/* Product Form */
-
+/* --- Product Form --- */
 .btn-file {
     position: relative;
     overflow: hidden;

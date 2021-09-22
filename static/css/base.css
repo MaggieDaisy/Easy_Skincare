@@ -189,6 +189,15 @@ input[name='q']::placeholder {
     height: 2px;
 }
 
+.toast-header,
+.toast-count {
+    background-color: #d8dbf9 !important;
+}
+
+.toast-body {
+    background-color: #f5ddf4 !important;
+}
+
 /* --- Notification preview for shopping bag --- */
 /* --- from CSS-tricks.com https://css-tricks.com/snippets/css/css-triangle/ --- */
 .arrow-up {
@@ -333,14 +342,14 @@ input[name='q']::placeholder {
     background-color: #d8dbf9 !important;
 }
 
-/* --- Toasts --- */
-.toast-header {
-    background-color: #d8dbf9 !important;
+/* --- Footer --- */
+#footer {
+    clear: both;
+    position: relative;
+    height: 50px;
+    margin-top: 90px;
 }
 
-.toast-body {
-    background-color: #f5ddf4 !important;
-}
 
 /* ------------ Media queries --------------- */
 

@@ -346,10 +346,9 @@ input[name='q']::placeholder {
 #footer {
     clear: both;
     position: relative;
-    height: 50px;
-    margin-top: 90px;
+    max-height: 50px;
+    margin-top: calc(100vh - 200);
 }
-
 
 /* ------------ Media queries --------------- */
 

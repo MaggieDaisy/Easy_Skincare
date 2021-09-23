@@ -283,12 +283,50 @@ The final result of this project is a full-stack, front-end and back-en
 
 # 8. Deployment
 
-Steps of setting up and creating this project
-This project uses recommended for students Code Institute's template with the master branch. 
+This project was edited and developed using the IDE GitPod and version control software Git to add, commit and push the code to GitHub where it was stored. This project uses recommended for students Code Institute template with the automatically included main branch.
 
-> The first step to take was 
+> Deployment steps to the Heroku hosting page consist of:
 
-to create a new repository in GitHub named Easy_Skincare. This project was edited and developed using the IDE GitPod and version control software Git to add, commit and push the code to GitHub where it was stored. 
+- create a new repository in GitHub named 'Easy_Skincare' by using a mentioned template
+- open the repository in GitPod-VSC by cloning the repo from GitHub
+- develop a main part of the project to the stage when is ready for deployment to the hosting platform
+- log in to Heroku page and click "New' and then select 'Create New App'
+- give an app a unique name, using dashes instead of spaces, like entering 'easy-skincare' in the input field 'App name'  
+- select the region free to use and closest to my location 'Europe' and click 'Create App'
+- head to 'Resources' tab and type in Postgres in the Add-ons search bar
+- select Heroku Postgres and provision a Hobby Dev-Free database
+- back to GitPod and install by typing `pip3 install dj_database_url` and `pip3 install psycopg2-binary`
+- freeze requirements to the txt file by typing `pip3 freeze > requirements.txt` in the terminal which informs Heroku what dependencies are required
+- store database setup by `import dj_database_url` in settings.py
+- retrieve the Database URL from the hidden Config Vars in Heroku
+- paste the Database URL in the database path in settings.py and remove the local settings
+- to save that in terminal, run migrations to build the database in Postgres by typing `python3 manage.py migrate`
+- to import data load JSON files for Categories and Products by typing `python3 manage.py loaddata categories` and `python3 manage.py loaddata products`, in that specific order
+- create a superuser by typing `python3 manage.py createsuperuser` and follow the instructions shown in the terminal
+- remove the Postgres Database URL from settings.py so it will not end up in version control, and commit changes
+- install sort of webserver by typing `pip3 install gunicorn` and freeze that to the requirements.txt file
+- create a Procfile and type `web: gunicorn easy-skincare.wsgi:application` to the file, make sure there is no extra line after the first line as this can confuse host Heroku
+- log in to Heroku by typing heroku login -i 
+- type heroku config:set DISABLE_COLLECTSTATIC=1 (in my case also add --app easy-skincare) in the terminal to stop Heroku from collecting the static files
+- allow Host in settings.py by inserting heroku app name and localhost
+- add, commit and push all changes to GitHub
+- type `git push heroku main` to push everything to Heroku and check if the app was deployed successfully (pray at that moment)
+- set to automatic deploy in Heroku, select 'Deploy' tab from the Heroku App menu and select 'GitHub' from the 'Deployment method' section of the page
+- ensure that GitHub profile name was showing properly and search for repo name in the input 'Search' field
+- once the repo is found, click 'Connect' to complete that action and 'Enable Automatic Deploys' every time code is pushed to GitHub it will end up in Heroku as well
+- set up a secret key, select 'Settings' from the Heroku App menu, select 'Reveal Config Vars' and insert the relevant key/value information
+- back to the settings.py and replace the secret key with the call to get it from the environment `SECRET_KEY = os.environ.get("SECRET_KEY", "")`
+- make sure at in the end of development proccess all necessary setting (key and value) for config variables are included:
+    - `AWS_ACCESS_KEY_ID =	<value here>`
+    - `AWS_SECRET_ACCESS_KEY =	<value here>`
+    - `DATABASE_URL =	<value here>`
+    - `EMAIL_HOST_PASS = <value here>`
+    - `EMAIL_HOST_USER = <value here>`
+    - `SECRET_KEY = <value here>`
+    - `STRIPE_PUBLIC_KEY = <value here>`
+    - `STRIPE_SECRET_KEY = <value here>`
+    - `STRIPE_WH_SECRET = <value here>`
+    - `USE_AWS = True`
 
 > The second step was 
 

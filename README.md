@@ -21,12 +21,12 @@ This complex project was created to demonstrate the acquisition of broader codin
 
 # Easy Skincare 
 
-[**Please, to view the live project ---> Click Here**](https://hdhdhddahdyfgsjsklslslsllsls.herokuapp.com/)
+[**Please, to view the live project ---> Click Here**](https://easy-skincare.herokuapp.com/)
 
 Easy Skincare is a full-stack application for a non-existing/fictional brand, that allows users to interact on the page. The purpose of this app is to demonstrate and search for skincare products, add reviews, contact for consultation. This app can benefit skincare enthusiasts who like to experiment with products with clear INCI lists and are recommended by dermatologists. The website offers the possibility to users to store their data for later orders, add products to the wishlist, and make a secure purchase. This website is designed in such a way that the user can check it at any time, and on any device, like on the phone/tablet on the road, or at home on the computer. This project may be expanded successfully in the future with other, more detailed categories and services. 
 
 
-<img src="docs/pictures/amiresponsive.jpg" style="margin: 0;">
+<img src="docs/pictures/Mockup_MS4.jpg" style="margin: 0;">
 
 
 # 2. UXD – User Experience Design

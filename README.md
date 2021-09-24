@@ -142,7 +142,7 @@ A database created for this project consists of models for:
 - wishlist
 - reviews 
 
-Database for products and categories was collected and basically self-written only for the purpose of this particular project (disclaimer for imagery, names, descriptions, and all information can be found in the Credit section of this file). During the development process for that purpose was used SQLite and during the production process Heroku Postgres. The database idea for products was taken from a walkthrough project by Code Institute by first creating JSON files and store them in the fixtures folder in the products app. Database documenting models is shown in a separate diagram above. 
+Database for products and categories was chosen, collected and basically self-written/self-created only for the purpose of this particular project (disclaimer for imagery, names, descriptions, and all information included can be found in the Credit section of this file). During the development process for that purpose was used SQLite and during the production process Heroku Postgres. The database idea for products was taken from a walkthrough project by Code Institute by first creating JSON files and store them in the fixtures folder in the products app. Database documenting models is shown in a separate diagram above. 
 
 <img src="docs/database/data.jpg" style="margin: 0;">  admin database 
 
@@ -289,7 +289,7 @@ This project was edited and developed using the IDE GitPod and version control s
 
 - create a new repository in GitHub named 'Easy_Skincare' by using a mentioned template
 - open the repository in GitPod-VSC by cloning the repo from GitHub
-- develop a main part of the project to the stage when is ready for deployment to the hosting platform
+- develop a fundamental part of the project to the stage when is ready for deployment to the hosting platform
 - log in to Heroku page and click "New' and then select 'Create New App'
 - give an app a unique name, using dashes instead of spaces, like entering 'easy-skincare' in the input field 'App name'  
 - select the region free to use and closest to my location 'Europe' and click 'Create App'
@@ -306,8 +306,8 @@ This project was edited and developed using the IDE GitPod and version control s
 - remove the Postgres Database URL from settings.py so it will not end up in version control, and commit changes
 - install sort of webserver by typing `pip3 install gunicorn` and freeze that to the requirements.txt file
 - create a Procfile and type `web: gunicorn easy-skincare.wsgi:application` to the file, make sure there is no extra line after the first line as this can confuse host Heroku
-- log in to Heroku by typing heroku login -i 
-- type heroku config:set DISABLE_COLLECTSTATIC=1 (in my case also add --app easy-skincare) in the terminal to stop Heroku from collecting the static files
+- log in to Heroku by typing `heroku login -i`
+- type `heroku config:set DISABLE_COLLECTSTATIC=1` (in my case also in the end add `--app easy-skincare`) in the terminal to stop Heroku from collecting the static files
 - allow Host in settings.py by inserting heroku app name and localhost
 - add, commit and push all changes to GitHub
 - type `git push heroku main` to push everything to Heroku and check if the app was deployed successfully (pray at that moment)
@@ -316,10 +316,11 @@ This project was edited and developed using the IDE GitPod and version control s
 - once the repo is found, click 'Connect' to complete that action and 'Enable Automatic Deploys' every time code is pushed to GitHub it will end up in Heroku as well
 - set up a secret key, select 'Settings' from the Heroku App menu, select 'Reveal Config Vars' and insert the relevant key/value information
 - back to the settings.py and replace the secret key with the call to get it from the environment `SECRET_KEY = os.environ.get("SECRET_KEY", "")`
-- make sure at in the end of development proccess all necessary setting (key and value) for config variables are included:
+- make sure that during development proccess all necessary settings (key and value) for config variables are included:
     - `AWS_ACCESS_KEY_ID =	<value here>`
     - `AWS_SECRET_ACCESS_KEY =	<value here>`
     - `DATABASE_URL =	<value here>`
+    - `DISABLE_COLLECTSTATIC =	1 <will be removed later on>` 
     - `EMAIL_HOST_PASS = <value here>`
     - `EMAIL_HOST_USER = <value here>`
     - `SECRET_KEY = <value here>`
@@ -328,9 +329,80 @@ This project was edited and developed using the IDE GitPod and version control s
     - `STRIPE_WH_SECRET = <value here>`
     - `USE_AWS = True`
 
-> The second step was 
+> Deployment steps to the Amazon Web Services cloud-base storage consist of:
 
-Install Django and all necessary adds ,,,,,,,,,,, tbc
+- create an Amazon AWS account, please take into consideration that authorization can take some days according to current standard procedures 
+- once your account exist and you are logged in, go to AWS Management Console and search for **S3 - Simple Storage Service**, and then create a new bucket, select the region, allow public access to the files, and approve
+- under the 'Properties' tab turn on 'Static website hosting', then enable host website and add index.html and error.html, and save
+- under the 'Permissions' tab paste CORS configuration, like so:
+```
+[
+  {
+      "AllowedHeaders": [
+          "Authorization"
+      ],
+      "AllowedMethods": [
+          "GET"
+      ],
+      "AllowedOrigins": [
+          "*"
+      ],
+      "ExposeHeaders": []
+  }
+]
+```
+- under the 'Permissions' tab go to 'Bucket Policy' and select 'Policy generator' to create security for this bucket, chose 'S3 Bucket Policy' as Select Type of Policy, enter '*' for Principal, select Actions as 'GetObject', Enter 'ARN' created earlier in 'Bucket Policy'
+approve by 'Add Statement' and then 'Generate Policy'
+- copy whole Policy JSON file and paste it into the 'Bucket Policy', add '/*' at the end of Resources line and save changes
+- under the 'Access Control List' tab set the 'List objects' permission for 'Everyone' and save
+
+
+- with S3 Bucket ready create a user to access it, go back to AWS Management Console and search for **IAM - Identity and Access Management**
+- from the IAM dashboard select 'User Groups', then create a new group by giving it a name, continue to click through and finally 'Create Group'
+select 'Policies' and then create a policy
+- under JSON tab click 'Import managed policy' and from a list provided choose AmazonS3FullAccess
+- edit the resource with 'Bucket ARN' created earlier when making 'Bucket Policy' and paste that in this JSON file 
+- click next step and go to 'Review policy', give the policy a name and description of your choice, and approve by 'Create policy'
+- come back to User Groups and choose the group created earlier
+- under the 'Permissions' click 'Add permissions', search for a created policy, and choose 'Attach Policy'
+- finally under the 'Users' page click 'Add user', give it a user name, select 'Programmatic access' as the Access type and click 'Next Permissions'
+- add the user to the Group just created by clicking 'Next' and 'Create User'
+- download and save the .csv file containing the access key and secret access key for authentication, mark that this one is available once and can not be downland later on
+
+> Connecting Django to AWS S3 consist of:
+
+- to achieve that in terminal install boto3 and django-storages by typing `pip3 install boto3` and `pip3 install django-storages`
+- next freeze those to the requirements file by typing `pip3 freeze > requirements.txt` so they can install and add 'storages' to installed apps 
+- add an if statement in your settings.py to give a message for a place of storing those sensitive pieces of information  
+- add the values from the .csv file to Heroku 'Config Vars' under Settings and remove the DISABLE_COLLECTSTATIC variable from a selection of variables
+- create a custom_storages.py file and import django settings from django conf, and s3boto3 storages, add static storage class and media storage class, finally add information about those location settings in setting.py, add changes, commit them and push to trigger an automatic deployment to Heroku, check the Build Log if all of the files was build successfully 
+- with S3 bucket set up, under the automatically created static folder, create a new folder called media and inside upload by clicking 'Add Files' all media files to it from the folder collection with product images, and other images used through the site
+- then click 'Next' and under 'Manage public permissions' select 'Grant public read access' to make sure that all static and media files are publically accessible and click 'Upload'
+
+> Local hosting by creating a clone consist of:
+
+- navigate to my GitHub repo
+- click the Code button next to the Green Gitpod button 
+- choose either to download the zip file or clone the repo using GH https://github.com/MaggieDaisy/Easy_Skincare.git repo clone in the terminal 
+- install the modules listed in the requirements.txt file by typing `python3 -m pip -r requirements.txt` in the terminal
+- install the JSON files using `python3 manage.py loaddata categories`, and `python3 manage.py loaddata products`, in this order
+- create a SuperUser by using `python3 manage.py createsuperuser` and follow further instructions
+- run migrations to create a database by using `python3 manage.py migrate`
+- create an env.py file in your application folder and add the following:
+```
+import os
+os.environ.setdefault("SECRET_KEY", "value here")
+os.environ.setdefault("STRIPE_PUBLIC_KEY","value here",)
+os.environ.setdefault("STRIPE_SECRET_KEY","value here",)
+os.environ.setdefault("STRIPE_WH_SECRET", "value here")
+os.environ.setdefault("EMAIL_HOST_PASS", "value here")
+os.environ.setdefault("EMAIL_HOST_USER", "value here")
+````
+- the app can now be run locally by typing `python3 manage.py runserver` in the terminal
+
+
+
+
 
 # 9. Credits
 

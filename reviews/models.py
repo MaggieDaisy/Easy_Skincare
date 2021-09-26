@@ -16,3 +16,6 @@ class Review(models.Model):
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     content = models.TextField()
     date_posted = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.user

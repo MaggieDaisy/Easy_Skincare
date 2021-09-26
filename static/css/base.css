@@ -43,6 +43,10 @@ body {
     background-color: #d069ca;
 }
 
+.content {
+    min-height: 100vh;
+}
+
 /* --- from Bulma style for icons --- */
 .icon {
     align-items: center;
@@ -344,14 +348,10 @@ input[name='q']::placeholder {
 
 /* --- Footer --- */
 #footer {
-    clear: both;
-    position: relative;
     max-height: 50px;
-    margin-top: calc(100vh - 200);
 }
 
 /* ------------ Media queries --------------- */
-
 /* --- Media Query for slightly larger container on bigger screens --- */
 @media (min-width: 1200px) {
     .container {

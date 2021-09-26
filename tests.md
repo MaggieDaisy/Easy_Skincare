@@ -12,7 +12,7 @@ The first step of the testing process was to create a repository with the basic 
 8. **Card panels at different Products pages** - has been checked and ensured that returns properly all planned content for separate products from the database, like a picture, product name, price, category, and rating. Picture acts as a link to bring a user to the specific 'Product Detail' page. Sorting functionality works as well by sorting products by price, category, name, rating - descending or ascending. Product has tags that are active and correctly redirecting and filtering products by category name.
 9. **Product Detail Page** - has been checked and ensured that returns user to correct product and details stored in the database, like product name, image, price, category, rating, and full description. Page display 'Add to Wishlist' button and shows up this possibility only for logged in users. Product quantity option buttons are disabled from 1-99. The page displays 'Add Product' to the bag and 'Continue shopping' buttons, which works as expected, add to bag successfully place a product in the shopping bag and continue shopping redirects the user back to the 'All Products' page. Here also exist the 'Add Review' button that gives the possibility to leave a comment review to this specific product, button successfully returns the user to the form where a review can be written.
 10. **Shopping Bag Page** - has been checked and ensured that returns correct products chosen by the user. The shopping 'My Bag' link on the top of the navbar shows the value of the current bag session. This page displays also quantity buttons that are working properly and preventing the user from exceeding 99 and going below 1. After adding all products to the bag totals are shown correctly and the free delivery threshold updates accordingly to the user action and returns current values. When firstly adding items to the bag, and then logging in after user can see how this retains the current bag.
-11. **Checkout Page and Checkout Success Page ** - 'Checkout' page has been checked and ensured that returns correct products with their prices and all core information are transferred properly from the 'Shopping bag' page. The whole form for delivery details and payment form for the card responding properly, payment field shows incorrect inputs if occurred. The 'Checkout' page smoothly redirects the user to the 'Checkout success' page and the Stripe payment system correctly shows 200 status webhooks for registered orders.
+11. **Checkout Page and Checkout Success Page** - 'Checkout' page has been checked and ensured that returns correct products with their prices and all core information are transferred properly from the 'Shopping bag' page. The whole form for delivery details and payment form for the card responding properly, payment field shows incorrect inputs if occurred. The 'Checkout' page smoothly redirects the user to the 'Checkout success' page and the Stripe payment system correctly shows 200 status webhooks for registered orders.
 12. **Product Management Page available for registered users** - has been checked and ensured that gives the site/store owners possibility for simple manipulation of the database by adding, editing, updating, and deleting products. This link at the top navigation menu redirects the admin directly to the 'Add product' page with the build-in form to make that process super easy. Confirmed that only admins have access to the 'Product Management' page on the account dropdown and only they can see and have access to the features mentioned above, like add product, edit and delete products from the cards or product detail page. All functionality for this will be shown in the crud section in this file and proven that all features were checked and work properly. 
 13. **Profile Page available for registered users** - has been checked and ensured that returns order history and prefilled delivery details for registered earlier users who made a purchase in the past. 
 14. **Add Review available for registered users** - has been checked and ensured that displays added review under the specific product at 'Product Detail' page. The existing button points the user to the product review form which matches the name of the product from the database, and leaves space for comment content, this option can show only for users registered and logged in. The review will show automatically the date of adding it and the user name and will be deleted from the database once a user is not existing anymore. 
@@ -26,15 +26,19 @@ The first step of the testing process was to create a repository with the basic 
 When the site developed closer to the final stage, the next test was to check eventually errors in a code validation.
 - **HTML** - passing rendered code into The W3C Markup Validation Service brought some warnings about javascript type, this warning does not cause any problems for the application. 
 
-<img src="docs/tests/validation.jpg" style="margin: 0;">
+<img src="docs/tests/validation/HTML_testvalid.jpg" style="margin: 0;">
 
-- **CSS** - passing code into The W3C CSS Validation Service - Jigsaw brought no errors.
+- **CSS** - passing code into The W3C CSS Validation Service - Jigsaw brought no errors, static files that have been under validation - base.css, profile.css, checkout.css, none causing any issues
 
-<img src="docs/test/validation.jpg" style="margin: 0;">
+<img src="docs/tests/validation/CSS_testvalid.jpg" style="margin: 0;">
 
-- **Java Script** - passing code to JSHint a static code analysis tool for JavaScript returned some ,,,,,,,,,,,,????????? despite this, the functionality of code worked for the application.
+- **Java Script** - passing code to JSHint a static code analysis tool for JavaScript returned some information, no errors have been found, but only some metrics, warnings and undefine variables, despite these small details the functionality of code worked for the application, files that have been tested - stripe_elements.js, countryfield.js, and some small pieces of code included at the bottom in various html templates
 
-<img src="docs/test/.jpg" style="margin: 0;">
+<img src="docs/tests/validation/JS_testvalid.jpg" style="margin: 0;">
+
+- **JSON files** - passing code to the JSON Formatter and Validator brought no errors, two core files were tested for buildup database: products.json, categories.json
+
+<img src="docs/tests/validation/JSON_testvalid.jpg" style="margin: 0;">
 
 - **PEP8** - check code for PEP8 requirements, passing code into PEP8 online returned no errors, however in the terminal still visible some problems about imports that are imported but not used, lines too long, pylinth ,,,,,,,,?????? etc 
 

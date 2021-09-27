@@ -180,18 +180,29 @@ During the development process, the design several times had to be changed. A co
 
 # 3. Features
 
-> Existing Features
+> Existing Features shown across the pages
 
 Existing features on the site were created for making the User's Experience easy and intuitive. Application is clear to understand, as a first visible is the purpose of the website which is reading, shopping, storing data, and sharing reviews with others. Space created for users is very simple and comfortable, all features are clearly specified and pointing users to take further steps. The navigation bar and footer are consistent and act as a present component on every page which makes navigation smooth. Name of separate pages acts as active links and brings users to different parts of content and experiences. 
 
-- **Top Navigation Bar**
+- **Top Navigation Bar** - Implemented navbar is a visible element on every page and is fully responsive so that users can browse across the site smoothly. If a user has something in the bag the cost of the current shops' displays on the screen.
 
+<img src="docs/pictures/features/navbar_feature.jpg" style="margin: 0;">
 
-- **Home Page**
+- **Search Bar** - Users have the possibility for search function within the navigation bar to search for products names or descriptions, the result displays a simple active link that redirects the user to the all products page.
+
+<img src="docs/pictures/features/search_feature.jpg" style="margin: 0;">
+
+- **Home/About Page** - Home/About page features acts as an introduction to the site, hero image with shop here button, and cards panels with a philosophy of easy and simple skincare routines.
   
+<img src="docs/pictures/features/about_feature.jpg" style="margin: 0;">
 
-- **About Page**
+- **Alerts/Messages**
 
+<img src="docs/pictures/features/toast_feature.jpg" style="margin: 0;">
+
+- **Products Store**
+
+<img src="docs/pictures/features/store_feature.jpg" style="margin: 0;">
 
 - **Register Page**
   
@@ -268,9 +279,25 @@ The final result of this project is a full-stack, front-end and back-en
 
 # 6. Project barriers and solutions
 
-- After inserting the home page index.html into the code validator error has been found, and fixed by simply removing <br> tags and adding `d-block` classes for the <li></li> tags instead, just to display all elements in separate lines inside card body
+- After inserting the home page index.html into the code validator error has been found, and fixed by simply removing `<br>` tags and adding `d-block` classes for the `<li></li>` tags instead, just to display all elements in separate lines inside card body.
 
 <img src="docs/pictures/brtag_error.jpg" style="margin: 0;">
+
+- After inserting code into the code validator another error has been found, this time about a duplicate id at the navigation bar, while opening a page both navigations for mobile view and for desktop view will load as one template,  and only one id is allowed in that case, because after convention it has to be unique, it was repeated after found in base.html so I changed id="user-options" and its label, for an id="user-options-mobile" in mobile-top-header.html template to make that work.
+
+<img src="docs/pictures/dblid_error.jpg" style="margin: 0;">
+
+- Problems occurred with the middle page hanging footer when displaying separate sites with very little content, like an empty wishlist, or empty bag, or template to sign in or log out. I tried several solutions investigated on pages with CSS tricks and stack overflow, none was perfect in that matter. After I spoke with my Mentor during one of the sessions, I find out that the simplest solution would be to wrap a whole content in base.html in a `div and add a class="content"`, and then refer to it in CSS by using `.content` selector with property `min-height` and its value `100vh`. That worked for this case.
+
+<img src="docs/pictures/footer_middle.jpg" style="margin: 0;">
+
+- During the deployment application to the hosting platform, when I was trying to connect the database to Heroku Postgres, after trying to show migrations, an operational error occurred, after a recommendation in the tutorial to fix this bug I ran the following command in terminal: `unset PGHOSTADDR`, and that worked.
+
+<img src="docs/pictures/operational_error.jpg" style="margin: 0;">
+
+- Right after, while trying to temporarily disable collect static so that Heroku will not collect them when the app is deployed by running command `heroku config:set DISABLE_COLLECTSTATIC=1`, I got an 'Error: Missing required flag -a, --ap APP' info in a terminal which says that 'Error: EACCES: permission denied, open....error.log', so after following instructions provided in terminal, I had to repeat action by using command `heroku config:set DISABLE_COLLECTSTATIC=1 --app easy-skincare`, so that returned success.
+
+- Webhook error , testing, slack topic , stripe  ?????????
 
 
 # 7. Version Control

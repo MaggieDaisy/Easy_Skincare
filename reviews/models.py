@@ -18,4 +18,4 @@ class Review(models.Model):
     date_posted = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.user
+        return f"Review ({self.user})"

@@ -96,7 +96,7 @@ errors that are just showing too many characters or simply not the best applicat
 
 - **Grammarly** - Final tests were about to check grammar and spelling throughout the whole site content and Readme file and Test file, page by page text was run through Grammarly application and showed several errors to correct. 
 
-# User stories 
+# All User Stories 
 
 > Answering to a user story needs: 
 
@@ -112,18 +112,16 @@ errors that are just showing too many characters or simply not the best applicat
 - Tests made on the 'Logout' link confirm that the user can very quickly leave the profile site by clicking on the navbar link. 
     - *Please note that imagery examples that cover testing for regular user stories can be found in the manual and crud testing section, as well as through whole documentation presented in Readme and tests file, many features and their functionality repats simultaneously
 
-# Regular users/shoppers of the site
+> Regular Site Users and Customer/Shoppers Users with CRUD functionality
 - The **registration** process by entering simple data info like Userneme and Password required went very easy and smooth and returned a toast message about a successfully created **Profile** page. 
 
-<img src="assets/docs/pictures/crud/alert_regok.jpg" style="margin: 0;">
-
-<img src="assets/docs/pictures/crud/edit_alertok.jpg" style="margin: 0;">
+<img src="docs/tests/users/.jpg" style="margin: 0;">
 
 - Then I tested out the **search bar** provided, I entered one of the ingredients of a recipe I wanted to contain, it was the word strawberry which successfully returned cocktail called Strawberry Daiquiri. I made sure that I can see and read other users recipes, browse between them, and search for them by **entering cocktail names or ingredients**. 
 
-<img src="assets/docs/pictures/crud/search_bar.jpg" style="margin: 0;">
+<img src="docs/tests/users/.jpg" style="margin: 0;">
 
-# CRUD for Product Management - available only for owners/admins
+> Product Management -  available only for Site Owners/Admins with CRUD functionality
 
 - One of the important parts of testing on this application was to ensure that registered and authorized administration user can **Create, Read, Update and Delete** products in the database. So to check that all functionality works as it was planned I created the following user account with higher access privileges, please use these login credentials 
     - login: skinadmin 
@@ -164,6 +162,8 @@ errors that are just showing too many characters or simply not the best applicat
 # Debug mode
 
 During the development process debug mode was turned as "True", after a production version of the application needs to be changed for the development version debug mode was turned as "False". 
+
+Pages created for handling 404 and 500 errors keep the user on the site when something is not going smooth, allowing them to return to the home/root page without looking for a solution. 
 
 <img src="docs/pictures/.jpg" style="margin: 0;">
 

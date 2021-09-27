@@ -90,7 +90,8 @@ Current and further developing and designing skill ability, the website provides
 - Landing page with the hero image, introduction paragraph, shop button. Introduction content below with philosophy, services, and pieces of advice 
 - Pieces of key information about each product, like description, rating, price, image
 - Clear and simple searching bar to browse for products and keywords
-- Informative and simple steps of making a secure purchase, add items to the bag, form for personal and payment information, a list with order details and confirmation 
+- Informative and simple steps of making a secure purchase, add items to the bag, form for personal and payment information, a list with order details and confirmation
+- Wishlist for storing favorite products in one place, and the possibility to give review for a product of choice
 - Clean information on how and where to log in and use the profile as a registered user
 - Secure log out feature possibility to store data safely
 - The simple mean of how to create, add, edit and delete an item - reserved for the Management Production only 
@@ -106,6 +107,7 @@ All users of the website should be able to see the navigation bar, with clickabl
 - **Navigation Bar** on the top of the page which is consistent  - contains a logo image and brand name which acts as a link to the main page, search bar, names with icons of each site page for browsing easily between them, toggle button visible on smaller devices. On the bottom of the navigation bar, categories of products with a dropdown menu for each to browse between detailed subcategories
 - **Home/About Page** - contains a short introduction paragraph, hero image, and shop button, below collection of cards with the theme of the site, purpose, and philosophy of brand and guidance about easy skincare routines, as well as e consultation button directing to purchase a service 
 - **All Products** Page - contains card panels with the presentation of products, each card contains an image that acts as a clickable button for the further view of the full product details, name, price, rating info, category name of the product
+- **Product Detail** Page - actually a multitask page that gives a users possibility for interaction, contains name, price, and full description about the product, provides also add to wishlist button, add to bag button, and add review button 
 - **Register Page** - contains fields to fill up with 'Username' and 'Password' and a 'Register' button, and a link to the 'Log In' Page
 - **Log In** Page - contains fields to fill up with 'Username' and 'Password' and a 'Login' button, and a link to the Register Page
 - **Profile** Page - contains personal information about a user, delivery details, and order history, this page is available for registered users
@@ -142,9 +144,9 @@ A database created for this project consists of models for:
 - wishlist
 - reviews 
 
-Database for products and categories was chosen, collected and basically self-written/self-created only for the purpose of this particular project (disclaimer for imagery, names, descriptions, and all information included can be found in the Credit section of this file). During the development process for that purpose was used SQLite and during the production process Heroku Postgres. The database idea for products was taken from a walkthrough project by Code Institute by first creating JSON files and store them in the fixtures folder in the products app. Database documenting models is shown in a separate diagram above. 
+Database for products and categories was chosen, collected and basically self-written/self-created only for the purpose of this particular project (disclaimer for imagery, names, descriptions, and all information included, can be found in the Credit section of this file). During the development process for that purpose was used SQLite and during the production process Heroku Postgres. The database idea for products was taken from a walkthrough project by Code Institute by first creating JSON files and store them in the fixtures folder in the products app. Database documenting models is shown in a separate diagram above. 
 
-<img src="docs/database/data.jpg" style="margin: 0;">  admin database 
+<img src="docs/database/django_admindb.jpg" style="margin: 0;">
 
 
 ### **Surface**
@@ -196,35 +198,38 @@ Existing features on the site were created for making the User's Experience easy
   
 <img src="docs/pictures/features/about_feature.jpg" style="margin: 0;">
 
-- **Alerts/Messages**
+- **Alerts/Messages** - Bootstrap toasts providing feedback to the user after clickable actions related to the products. Shoppers can have control all the time when they are interacting with the page, like a number of items in the bag, and total cost, update that some product was successfully added or deleted, button to the checkout and calculation for a free delivery option over spending a specific amount of money.
 
 <img src="docs/pictures/features/toast_feature.jpg" style="margin: 0;">
 
-- **Products Store**
+- **Products Store** - The Shop page displays all products on large resolutions in a row of four, and mobile screens in a row of one. Standard card layout gives a clean user experience with visible elements, and clicking the image will bring the user to the product detail page.
 
 <img src="docs/pictures/features/store_feature.jpg" style="margin: 0;">
 
-- **Register Page**
+- **Register/Login/Logout Pages** - those features allow the user to  sign up to the page to create a profile, to log in as a coming back customer in the future, and log out to safe data for later under protection from outside, authentication for a user is being provided
+  
+<img src="docs/pictures/features/register_feature.jpg" style="margin: 0;">
   
 
-- **Login Page**
-  
+- **Profile Page** - Contains all prefilled information about user name, county, postcode, street, and whole order history with a possibility to check back for previous orders, user can update their data about themself and delivery, only authenticated/authorized users have access to this feature.
 
-- **Profile Page**
-  
+<img src="docs/pictures/features/profile_feature.jpg" style="margin: 0;">
 
-- **Log Out**
+- **Shopping Bag** - The shopping bag page is fully responsive, showing users a product picture, name, and total price, users can also use the update link to increase or decrease the number of products in their bag or delete link to remove it from bag. All prices are provided, like total and delivery cost and information about free delivery or how much more needs to be spent to get free delivery. 
 
+<img src="docs/pictures/features/bag_feature.jpg" style="margin: 0;">
 
-- **Footer**
-  - Contains Social Media icons that act as links for Facebook, Instagram, and YouTube and bring the user to the main platforms. In the future should bring the user to real social media provided by the community. Links open in a new tab so that the user can smoothly navigate back to the application. 
+- **Footer** - Contains Social Media icons that act as links for Facebook, Instagram, and YouTube and bring the user to the main platforms. In the future should bring the user to real social media provided by the community. Links open in a new tab so that the user can smoothly navigate back to the application. Added also email Icon, that directs to the postbox, in the future real contact feature will be provided and expanded. 
+
+<img src="docs/pictures/features/footer_feature.jpg" style="margin: 0;">
 
 > Features left to implement in the future when skills developed
 
-- like more products
-- more categories
-- vide consultation
+- Definitely in future great idea would be to add much more products to the store together with more categories of products.
 
+- The application could have a blog to provide posting and exchanging opinions about new technologies in skin care, new and existing products, and advice about how to treat different skin issues. 
+
+- It would be nice to include video consultations so that users can meet up with specialists and get their bits of advice about products and treatments
 
 # 4. Technologies and Resources used 
 * [**Code Institute Fullstack Web Developer Course Content**](https://codeinstitute.net/) - was used as the main source of fundamental knowledge and inspiration.

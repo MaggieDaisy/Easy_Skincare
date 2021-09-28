@@ -100,28 +100,84 @@ errors that are just showing too many characters or simply not the best applicat
 
 > Answering to a user story needs: 
 
+*Please note at this point that imagery examples that cover testing for regular user stories and for actual shoppers can be found below, as well as through whole documentation presented in Readme and tests file, some features and their functionality repats simultaneously. (Navigation bar, Search bar, Footer, Home Page, Products Page, Register/Login/Logout forms are already presented in Feature section and responsive tests in manual tests)
+
+> ----- **Regular Site Browsing Users** -----
+
 - Tests made on the top located navigation bar shown that every person visiting the site will be able to navigate very easily between sections to find pieces of information. Clickable links are bringing the user to different pages. The navigation bar with active links is available all the time on top of the page, so it is easy to switch and back to desirable content.
-- Tests made on the separate pages shown that users will be able to learn about the application very fast. The 'Home' - landing page contains very intuitive information and shows the purpose of the website.
-- Tests made on the 'Register' page shown that all process is very easy and quick and does not require a lot of data to have access to the full content of the application. Profile account can be created in 3 steps, by entering Username, Password, and click on submit button. 
-- Test made on The 'Products' page which presents card panels with different products is very clear and meets the users expectation. Each card panel contains clickable image which acts as a link to further product detail page, a product name, price, category and rating. 
+- Tests made on the separate pages shown that users will be able to learn about the application very fast. The 'Home'/ 'About' - landing page contains very intuitive information and shows the purpose of the website. Included 'Shop Here' button directs users to all products and services available to buy in this store.
+
+<img src="docs/tests/users/shop_button.jpg" style="margin: 0;">
+
 - Tests made on footers social media icons allows user to find visible and easy access to social media. Clickable links are giving the user possibility to observe and join the community for skincare lovers.
 - Tests made on different screen sizes show that the application is responsive, so the user can look at the page on different devices.
-- Tests made on the 'Login' page has shown that existing user has very simple access to the full content of the page.  Similar to registration, logging in takes only 3 steps, so makes access very smooth and fast. 
-- Tests made on the 'Product Detail' page shown that users have a great possibility to read full description of the product, Add to Wishlist if needed, Add to Bag so it will trigger purchase and redirect user to the secure checkout, also Add Review to share opinion about this browsed product 
-- Tests made on the 'Profile' page shown that users can easily see their own data for delivery and orders history stored in one place. 
-- Tests made on the 'Logout' link confirm that the user can very quickly leave the profile site by clicking on the navbar link. 
-    - *Please note that imagery examples that cover testing for regular user stories can be found in the manual and crud testing section, as well as through whole documentation presented in Readme and tests file, many features and their functionality repats simultaneously
+- Tests made on the 'Register' page shown that all process is very easy and quick and does not require a lot of data to have access to the full content of the application. Profile account can be created in 3 steps, by entering Email, Username, Password, and click on submit button, confirming the email address, and signing in. To check that I created an account going through the **registration** process by entering simple data info like Email, Username and Password required, this went very easy and smooth and returned a toast message about a successfully created **Profile** page. 
 
-> Regular Site Users and Customer/Shoppers Users with CRUD functionality
-- The **registration** process by entering simple data info like Userneme and Password required went very easy and smooth and returned a toast message about a successfully created **Profile** page. 
+<img src="docs/tests/users/register_user.jpg" style="margin: 0;">
 
-<img src="docs/tests/users/.jpg" style="margin: 0;">
+- Tests made on the 'Login' page has shown that existing user has very simple access to the full content of the page.  Similar to registration, logging in takes only 3 steps, so makes access very smooth and fast.
 
-- Then I tested out the **search bar** provided, I entered one of the ingredients of a recipe I wanted to contain, it was the word strawberry which successfully returned cocktail called Strawberry Daiquiri. I made sure that I can see and read other users recipes, browse between them, and search for them by **entering cocktail names or ingredients**. 
+- Tests made on the 'Profile' page shown that users can easily see and update their own data for delivery, and check history of orders stored in one place. 
 
-<img src="docs/tests/users/.jpg" style="margin: 0;">
+<img src="docs/tests/users/profile_user.jpg" style="margin: 0;">
 
-> Product Management -  available only for Site Owners/Admins with CRUD functionality
+- Tests made on the 'Logout' link confirm that the user can very quickly leave the profile site by clicking on the navbar link.
+
+- Test made on The 'Products' page which presents card panels with different products is very clear and meets the users' expectations. Each card panel contains a clickable image that acts as a link to a further product detail page, a product name, price, category, and rating.
+
+<img src="docs/tests/users/products_user.jpg" style="margin: 0;">
+
+> ----- **Customer/Shoppers Users that are authenticated with all CRUD functionality** -----
+
+- Users have the possibility to Create, Read, Update, Delete data at this website by:
+    - create a user profile
+    - update delivery information at user profile
+    - create a shopping bag by adding products to it
+    - update quantity of products in shopping bag
+    - remove products from shopping bag
+    - read all content, by browsing through the site
+    - create and add review
+    - create a wishlist
+
+In that stage, tests that are made on the application show that the core part of the functionality is provided for every user of this application both regular users and shoppers can see the main pages and browse through the site so they are able to view a list of products and can select items to purchase. They can also view individual product details so that they can identify the price, description, product rating, product image, and have a possibility to add it to the wishlist, and read a review. They can quickly identify special offers, and available kits and consultations, so that they can take and advantage of them. They can easily view the total of purchases at any time and have control over spending money. Users are able to sort the list of available products and identify the best rated, best priced, and categorically sorted products. They can also sort a specific category of products so that they can find the best-priced or best-rated product in a specific category, or sort the product in that category by name. Finally, they can sort multiple categories of products simultaneously, so that they can find the best-priced or best-rated products across broad categories. Users can use the search bar to search for a product by name, category, or description keywords, they can see search results and decide if they found a product of their choice. 
+
+- Tests made on the 'Product Detail' as a multitasking page shown that users have a great possibility to read the full description of the product, Add to Wishlist if needed, Add to Bag so it will trigger a purchase and redirect the user to the secure checkout, also Add Review to share an opinion about this browsed product. Shoppers are able to easily select the quantity of a product and make sure that they will not accidentally select the wrong product numbers of items.
+
+<img src="docs/tests/users/detailp_user.jpg" style="margin: 0;">
+
+- Tests made on the 'Shopping Bag' Page returned the view of items to be purchased so that shoppers can identify the total cost of all items and they will receive this core information before moving to the final checkout. Shoppers can adjust the number of individual items in a bag, so they can easily make changes to the purchase before checkout.
+
+<img src="docs/tests/users/bag_user.jpg" style="margin: 0;">
+
+- For tests Stripe Payment Method used those recomended examples
+
+<img src="docs/tests/users/stripes_card.jpg" style="margin: 0;">
+
+- Tests made on the 'Checkout' page shown that shoppers are able to enter payment information easily and go through the check-out procedure very quickly and with no hassles. Shoppers  can feel that personal data and payment information is safe, and secure so they can confidently provide the needed information to make a purchase.
+
+<img src="docs/tests/users/checkout_user.jpg" style="margin: 0;">
+
+Tests made on the 'Checkout Success' page display an order confirmation after checkout so that shoppers can verify that purchase went well without making mistakes in the order. At that point, shoppers can receive an email confirmation after checking out and keep the confirmation of the purchase for the future records.
+
+<img src="docs/tests/users/success_user.jpg" style="margin: 0;">
+
+- Tests also included checking if the Stripe webhook handler works properly and return the result as expected, payment was succeded. 
+
+<img src="docs/tests/users/webhook_stripe.jpg" style="margin: 0;">
+
+- A confirmation email for an order has been sent to the email address provided by the user. 
+
+- An order has been created and stored in the database, together with all data provided by a user. 
+
+- Tests made on a 'Wishlist' page shown that logged users can create a list with favorite products and store it for the future, here user can add a review to this specific product as well, if want to.
+
+<img src="docs/tests/users/wishlist_user.jpg" style="margin: 0;">
+
+- Tests made on a review shown that logged in users can create a review by using a form that contains the name of the product and field for inserting content, and by clicking submit button user can add a review to this specific product which will be created with the actual date and user name 
+
+<img src="docs/tests/users/review_user.jpg" style="margin: 0;">
+
+> ----- **Product Management - available only for authorized Site Owners/Admins with CRUD functionality** -----
 
 - One of the important parts of testing on this application was to ensure that registered and authorized administration user can **Create, Read, Update and Delete** products in the database. So to check that all functionality works as it was planned I created the following user account with higher access privileges, please use these login credentials 
     - login: skinadmin 
@@ -163,9 +219,7 @@ errors that are just showing too many characters or simply not the best applicat
 
 During the development process debug mode was turned as "True", after a production version of the application needs to be changed for the development version debug mode was turned as "False". 
 
-Pages created for handling 404 and 500 errors keep the user on the site when something is not going smooth, allowing them to return to the home/root page without looking for a solution. 
-
-<img src="docs/pictures/.jpg" style="margin: 0;">
+Pages created for handling 404 and 500 errors keep the user on the site when something is not going smooth, allowing them to return to the home/root page without looking for a solution.
 
 
 

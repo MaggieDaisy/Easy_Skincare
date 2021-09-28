@@ -73,7 +73,8 @@ Potential users of this application are users who have a professional and hobbyi
 - As a user of the website, I wish to have visible access to social media, so I can follow after site owners/admin to receive some deals, events and offers info 
 - As a user of the website, I wish that design is responsive, so I can look at the page on different sizes of devices
 - As a user of the website, I wish to have the possibility to create a review, so I can share an opinion about the product with other users
-- As a user of the website, I wish to be able to easily register for an account, so that I can have a personalized account and be able to view my profile and add review 
+- As a user of the website, I wish to have the possibility to create my own wishlist, so I can save my favorite products of choice for later
+- As a user of the website, I wish to be able to easily register for an account, so that I can have a personalized account and be able to view and update my profile
 - As a user of the website, I wish to be able to easily login or logout, so that I can access my personal account information and update them if needed
 - As a user of the website, I wish to be able to easily recover my password in case I forget it, so that I can recover access to my account
 - As a user of the website, I wish to be able to receive an email confirmation after registering, so that I can verify that my account registration was successful
@@ -227,9 +228,11 @@ Existing features on the site were created for making the User's Experience easy
 
 - Definitely in future great idea would be to add much more products to the store together with more categories of products.
 
-- The application could have a blog to provide posting and exchanging opinions about new technologies in skin care, new and existing products, and advice about how to treat different skin issues. 
+- The application could have a blog to provide posting and exchanging opinions about new technologies in skincare, new and existing products, and advice about how to treat different skin issues and results achieved after recommended treatment.
 
-- It would be nice to include video consultations so that users can meet up with specialists and get their bits of advice about products and treatments
+- It would be nice to include video consultations so that users can meet up with specialists and get their bits of advice about products and recommended routines.
+
+- Create a contact form that is avaliable directly from this app for easier user experience. 
 
 # 4. Technologies and Resources used 
 * [**Code Institute Fullstack Web Developer Course Content**](https://codeinstitute.net/) - was used as the main source of fundamental knowledge and inspiration.
@@ -269,10 +272,9 @@ Existing features on the site were created for making the User's Experience easy
 * [**Black**](https://black.vercel.app/) - The uncompromising Python code formatter.
 * [**TempMail**](https://temp-mail.org/) - used to create temporary email adress for testing part
 * [**Grammarly**](https://app.grammarly.com/) - a comprehensive writing tool was used as a helper to write clear and correct text.
-* **Microsoft Paint** - a simple raster graphics editor has been used for editing and resizing pictures.
 * [**FaviconeCodeGenerator**](https://www.faviconcodegenerator.com/) - Favicon Code Generator is Free Online Favicon Converter and has been used to create a little graphic image (icon) associated with a webpage.
 * [**Coolors**](https://coolors.co/image-picker) - The super fast color schemes generator was used to create a color pallet for project from photo/logo image
-
+* **Microsoft Paint** - a simple raster graphics editor has been used for editing and resizing pictures.
 
 # 5. Testing
 
@@ -301,8 +303,6 @@ The final result of this project is a full-stack, front-end and back-en
 <img src="docs/pictures/operational_error.jpg" style="margin: 0;">
 
 - Right after, while trying to temporarily disable collect static so that Heroku will not collect them when the app is deployed by running command `heroku config:set DISABLE_COLLECTSTATIC=1`, I got an 'Error: Missing required flag -a, --ap APP' info in a terminal which says that 'Error: EACCES: permission denied, open....error.log', so after following instructions provided in terminal, I had to repeat action by using command `heroku config:set DISABLE_COLLECTSTATIC=1 --app easy-skincare`, so that returned success.
-
-- Webhook error , testing, slack topic , stripe  ?????????
 
 
 # 7. Version Control

@@ -7,7 +7,7 @@ from products.models import Product
 
 def bag_contents(request):
     """
-    shows all of the items in shopping bag, calculate if delivery is possible
+    Shows all of the items in shopping bag, calculate if delivery is possible
     for free, and shows how much money need to be spend for free delivery
     """
 

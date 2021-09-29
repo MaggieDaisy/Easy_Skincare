@@ -3,8 +3,11 @@ from django.contrib import admin
 from .models import Category, Product
 
 
-# Register your models here.
 class ProductAdmin(admin.ModelAdmin):
+    """
+    Adding extra fields to the product admin page
+    """
+
     list_display = (
         "sku",
         "name",
@@ -18,6 +21,10 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
+    """
+    Adding extra fields to the category admin page
+    """
+
     list_display = (
         "friendly_name",
         "name",

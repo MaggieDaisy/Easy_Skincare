@@ -4,6 +4,10 @@ from profiles.models import UserProfile
 
 
 class Wishlist(models.Model):
+    """
+    Model to display all products in wishlist
+    """
+
     user_profile = models.ForeignKey(
         UserProfile,
         on_delete=models.CASCADE,

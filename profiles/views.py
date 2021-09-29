@@ -9,7 +9,9 @@ from .models import UserProfile
 
 @login_required
 def profile(request):
-    """A view that display the user's profile"""
+    """
+    A view that display the user's profile
+    """
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == "POST":
@@ -32,6 +34,9 @@ def profile(request):
 
 
 def order_history(request, order_number):
+    """
+    A view that display the user's history of orders
+    """
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(

@@ -11,7 +11,7 @@ from .models import Review
 @login_required
 def add_review(request, product_id):
     """
-    Add a review to a specific product
+    A view that display review to a specific product
     """
     product = get_object_or_404(Product, pk=product_id)
     user = get_object_or_404(UserProfile, user=request.user)

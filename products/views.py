@@ -10,7 +10,9 @@ from .models import Category, Product
 
 
 def all_products(request):
-    """A view to show all products, including sorting and search queries"""
+    """
+    A view to show all products, including sorting and search queries
+    """
 
     products = Product.objects.all()
     query = None
@@ -60,7 +62,9 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """A view to show individual product details"""
+    """
+    A view to show individual product details
+    """
 
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product)
@@ -75,7 +79,9 @@ def product_detail(request, product_id):
 
 @login_required
 def add_product(request):
-    """A view to add a product to the store"""
+    """
+    A view to add a product to the store
+    """
     if not request.user.is_superuser:
         messages.error(request, "Sorry, only store owners can do that.")
         return redirect(reverse("home"))
@@ -104,7 +110,9 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
-    """A view to edit a product in the store"""
+    """
+    A view to edit a product in the store
+    """
     if not request.user.is_superuser:
         messages.error(request, "Sorry, only store owners can do that.")
         return redirect(reverse("home"))
@@ -136,7 +144,9 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-    """A view that delete a product from the store"""
+    """
+    A view that delete a product from the store
+    """
     if not request.user.is_superuser:
         messages.error(request, "Sorry, only store owners can do that.")
         return redirect(reverse("home"))

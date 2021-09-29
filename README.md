@@ -302,8 +302,17 @@ The final result of this project is a full-stack, front-end and back-en
 
 <img src="docs/pictures/operational_error.jpg" style="margin: 0;">
 
-- Right after, while trying to temporarily disable collect static so that Heroku will not collect them when the app is deployed by running command `heroku config:set DISABLE_COLLECTSTATIC=1`, I got an 'Error: Missing required flag -a, --ap APP' info in a terminal which says that 'Error: EACCES: permission denied, open....error.log', so after following instructions provided in terminal, I had to repeat action by using command `heroku config:set DISABLE_COLLECTSTATIC=1 --app easy-skincare`, so that returned success.
+- Right after, while trying to temporarily disable collect static so that Heroku will not collect them when the app is deployed by running command `heroku config:set DISABLE_COLLECTSTATIC=1`, I got an 'Error: Missing required flag -a, --ap APP' info in a terminal which says that 'Error: EACCES: permission denied, open...error.log', so after following instructions provided in terminal, I had to repeat action by using command `heroku config:set DISABLE_COLLECTSTATIC=1 --app easy-skincare`, so that returned success.
 
+- While final manual testing for code validation was made another bug to fix occurred, like on the page for Product Management where Admin can add the product to the store database, it was about using double id while one unique id is permitted per site, so simple solution was used to remove id from input tag for the select image field. Another problem showed about using `<strong></strong>` element as a parent of `<p></p>` tag, so I fixed that as well to pass HTML validation for a template. 
+
+<img src="docs/pictures/strong_error.jpg" style="margin: 0;">
+
+- On the 'Checkout' page also bug occurred while testing, I took away the 'for' attribute for the 'label' tag since it was not matching 'id' in this check form to save data and not passing validation. 
+
+- Because of the time issue, I am kind of force to leave another issue as an unresolved bug, on the 'Shopping Bag' page, during the validation another error occurred. While loading data for desktop view and medium and small devices 'id' used to decrement and increment numerous items in the shopping bag was causing a problem after refactoring a whole page. On a large screen did not work as expected allowing a user to make a value under 1 which could cause a problem when updating shopping bag items, a user could accidentally remove all of the items from the bag scrolling value til  -1. Since this feature is picked from HTML as a first on mobile view it was not working for large devices, so that is why I have decided to remove that possibility for mobile users to pass validation at this point. While loading data users can see the summary and proceed directly to the checkout without adjusting the bag,  this will be implemented as a future feature. 
+
+- Another issue refers to testing manually webhook handler for Stripe payment methods, all functionality works as expected for this application, triggering a button is creating order and charge and payment intent is returned as succeded, however, I received in terminal error by sending webhook handler test which was bringing error 500, and I found that similar issue was mentioned also by other students and leaders on Slack and it was a common issue that cache_checkout_data is what populates metadata with "bag" and "save info" - [**link**](https://code-institute-room.slack.com/archives/C7HS3U3AP/p1631980362410300)
 
 # 7. Version Control
 

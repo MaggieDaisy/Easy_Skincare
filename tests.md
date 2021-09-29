@@ -6,7 +6,7 @@ The first step of the testing process was to create a repository with the basic 
 
 1. **Brand name link with logo icon link** - has been checked and confirmed that directs the user successfully to the 'Home' page on click.
 2. **All links settled in the top navigation bar** - have been checked that allows the user to navigate between individual pages like Home, All Products, Actives, Exfoliants, Creams, Offers, My Account, Wishlist, My Bag.
-3. **Category dropdowns selection for products and account at navigation bar** - has been checked that display properly product category name, and all elements are clickable giving a user option to browse to the separate pages. The 'Signing' in option, correctly shows the dropdown options, Profile, and Logout. The 'Signing out' also shows the correct dropdown options, Login, and Register. The Admins of the site, have an additional option in the dropdown menu to the 'Product Management' page. 
+3. **Category dropdowns selection for products and account at navigation bar** - has been checked that display properly product category name, and all elements are clickable giving a user option to browse to the separate pages. The 'Signing out' option at My Account, correctly shows the dropdown options, Profile, and Logout. The 'Signing in' also shows the correct dropdown options, Login, and Register. The Admins of the site, have an additional option in the dropdown menu to the 'Product Management' page. 
 4. **All links settled in the side navigation bar for small and medium devices** - also have been checked that allows the user to navigate between individual pages and the whole bar is fully responsive on those resolutions, only on very small devices like 280px navigation links are not wrapping properly.
 5. **Button 'Shop Here' nested at the Home Page** - has been checked and ensured that directs the user a short way from content to 'All Products' available page.
 6. **Card selection at the Home Page** - has been checked that scrolls properly and gives a user visual experience together with the experience of interaction. During navigation, users can see the theme of the page, pieces of advice about skincare, and move to detail about the E-consultation offer by using an included button on the bottom of the page.
@@ -217,11 +217,11 @@ Tests made on the 'Checkout Success' page display an order confirmation after ch
 
 # Debug mode
 
-During the development process debug mode was turned as "True", after a production version of the application needs to be changed for the development version debug mode was turned as "False". 
+During the development process debug mode was turned as "True", after a production version of the application needs to be changed for the development version debug mode was turned as "False" by setting a `DEBUG = "DEVELOPMENT" in os.environ` in settings.py in this project, and making sure that config var named Development in Heroku does not exist. 
 
 Pages created for handling 404 and 500 errors keep the user on the site when something is not going smooth, allowing them to return to the home/root page without looking for a solution.
 
-
+<img src="docs/tests/validation/wrongurl.jpg" style="margin: 0;">
 
 
 

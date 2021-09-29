@@ -167,6 +167,8 @@ Tests made on the 'Checkout Success' page display an order confirmation after ch
 
 - A confirmation email for an order has been sent to the email address provided by the user. 
 
+<img src="docs/tests/users/email_user.jpg" style="margin: 0;">
+
 - An order has been created and stored in the database, together with all data provided by a user. 
 
 - Tests made on a 'Wishlist' page shown that logged users can create a list with favorite products and store it for the future, here user can add a review to this specific product as well, if want to.

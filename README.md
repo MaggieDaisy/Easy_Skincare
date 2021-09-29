@@ -477,10 +477,8 @@ All the images used in this site to provide product visuality were picked from p
 # 10. Acknowledgments
 
 - Inspiration for this project was the walkthrough full e-commerce project "Boutique Ado" created by CI
-- I would like to thank: 
-    - Code Institute tutors for creating inspiring content for the course and support during learning process,
-    - Slack Community, students and leaders, for being available and very helpful every single time when needed,
-    - and last but not least my mentor Sandeep Aggarwal for his guidance, patience, and effort during the development process
+- I would like to say, a big thank you, to the whole Code Institute assessment team and tutors for creating inspiring content for the course and general idea for this learning process. I would like to say thank you to the student care for being so nice and helpful, and the student Slack community, especially for active students and leaders, for being a team and very helpful every single time when needed. Last but not least my mentor Sandeep Aggarwal for his guidance, patience, and effort during the development process.
+Thank you all for this experience. I know that this journey was not easy, I never thought that I could come to this moment, and I hope that something exciting is just about to begin. Stay safe and healthy, and I hope that you enjoyed this project as much as I do. 
 
 
 

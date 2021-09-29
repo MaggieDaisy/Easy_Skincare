@@ -221,7 +221,7 @@ During the development process debug mode was turned as "True", after a producti
 
 Pages created for handling 404 and 500 errors keep the user on the site when something is not going smooth, allowing them to return to the home/root page without looking for a solution.
 
-<img src="docs/tests/validation/wrongurl.jpg" style="margin: 0;">
+<img src="docs/tests/validation/wrong_url.jpg" style="margin: 0;">
 
 
 

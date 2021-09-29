@@ -42,7 +42,7 @@ When the site developed closer to the final stage, the next test was to check ev
 
 <img src="docs/tests/validation/JSON_testvalid.jpg" style="margin: 0;">
 
-- **Python + Django code and PEP8** - For a clean and more easy development process python extension was installed and used to test and correct Python code on regular basis for Pep8 compliance with its built-in linting too. That tool was very handy especially when it comes to so complex structure of code. To check all errors, collected on one place, that possibly occured during developmnt I runned in terminal command 
+- **Python + Django code and PEP8** - For a clean and more easy development process python extension was installed and used to test and correct Python code on regular basis for Pep8 compliance with its built-in linting too. That tool was very handy especially when it comes to so complex structure of code. To check all errors, collected on one place, that possibly occured during development I runned in terminal command 
 `python3 -m flake8`
 > Many of the Python errors were fixed during development immediately when appeared, there were kind of hard to document them all in one short file. 
 - Some examples:
@@ -149,7 +149,7 @@ In that stage, tests that are made on the application show that the core part of
 
 <img src="docs/tests/users/bag_user.jpg" style="margin: 0;">
 
-- For tests Stripe Payment Method used those recomended examples
+- For tests Stripe Payment Method I used those recomended examples
 
 <img src="docs/tests/users/stripes_card.jpg" style="margin: 0;">
 
@@ -207,7 +207,7 @@ Tests made on the 'Checkout Success' page display an order confirmation after ch
 
 <img src="docs/tests/crud/update_admin.jpg" style="margin: 0;">
 
-- Then I head to the Delete link and I checked if I can **delete my product**. I tested out the link which returned an **alert asking** if I am sure about the deletion of this product. I clicked delete and I received a message that my product was deleted from the collection. I checked the page with cards for a specific category to make sure that it was gone from there.
+- Then I head to the Delete link and I checked if I can **delete my product**. I tested out the link and after clicking delete I received a message that my product was deleted from the collection. I checked the page with cards for a specific category to make sure that it was gone from there.
 
 <img src="docs/tests/crud/delete_admin.jpg" style="margin: 0;">
 

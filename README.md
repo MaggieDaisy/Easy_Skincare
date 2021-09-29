@@ -267,6 +267,7 @@ Existing features on the site were created for making the User's Experience easy
 * [**Json Formatter**](https://jsonformatter.curiousconcept.com/) - was used as json file formatter and validator
 * [**Json Online Viewer**](https://countwordsfree.com/jsonviewer) - was used to display json file tree view for data base fixtures 
 * [**PEP8 online**](http://pep8online.com/) - was used as tool check the code for PEP8 requirements
+* [**Google Python Style Guide**](https://google.github.io/styleguide/pyguide.html#383-functions-and-methods) - was used as root of information about Python rules
 * [**Closing Tag Checker for HTML5**](https://www.aliciaramirez.com/closing-tags-checker/) - was used to validate if all tags are open and close correctly.
 * [**HTML and CSS and JS Formatter**](https://webformatter.com/html) - Free online tool to format an ugly HTML code, making it readable and pretty, with the proper indentation.
 * [**Black**](https://black.vercel.app/) - The uncompromising Python code formatter.
@@ -441,10 +442,6 @@ os.environ.setdefault("EMAIL_HOST_USER", "value here")
 ````
 - the app can now be run locally by typing `python3 manage.py runserver` in the terminal
 
-
-
-
-
 # 9. Credits
 
 > Content
@@ -472,6 +469,9 @@ All the images used in this site to provide product visuality were picked from p
 - Code inspiration for the whole project and code snippets for the fundamental base structure borrowed from Walkthrough Project created by CI - [**Boutique Ado**](https://mag-boutique-ado.herokuapp.com/)
 - Code inspiration for Review model borrowed and adapted from tutorial - [**Product reviews - How to build an Ecommerce website using Django**](https://www.youtube.com/watch?v=Y5vvGQyHtpM)
 - Code inspiration for Wishlist model borrowed and adpated, after second learning session, from my mentor Sandeep Aggarwal
+- Django Rated Reviews - [**Quick start guide**](https://django-rated-reviews.readthedocs.io/en/latest/quickstart.html)
+- [**Django Tutorial Part 3: Using models**](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models)
+
 
 
 # 10. Acknowledgments
